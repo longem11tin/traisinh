@@ -32,6 +32,11 @@
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
 
+
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/count-down.css" rel="stylesheet"> 
+  <link href="form/style.css" rel="stylesheet">
+
   <!-- Template Main CSS File -->
   <style>
     /* body {font-family: Arial;} */
@@ -83,8 +88,6 @@
     .topright:hover {color: blue;}
 
   </style>
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/count-down.css" rel="stylesheet"> 
   <!-- <link href="assets/css/count-down_2.css" rel="stylesheet">  -->
 
   <!-- =======================================================
@@ -107,15 +110,7 @@
           <img class="logo-img" src="assets/img/logoimg.png" alt="logo-img">
           <img class="logo-text" src="assets/img/logo-text-2.webp" alt="logo-text">
         </a>
-        <!-- <a href="#">Chuyến Tàu Thời Đại</a>
-        <a class="" href="#">Summer Camp 2023</a> -->
-        <!-- <a href="#">Thời đại</a> -->
       </h1>
-      <!-- <div class="logo-text me-auto me-lg-0">
-        <img class="logo-text" src="assets/img/logo-text-2.webp" alt="logo-text">
-      </div> -->
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo-text-2.webp" alt="" class="img-fluid"></a> -->
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
@@ -360,25 +355,46 @@
         
         <div id="nam" class="tabcontent">
           <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-          <!-- <div>
+          <div class="wrapper">
+            <form action="" method="post" name="informations-nam">
+                <div id="wizard">
+                    <!-- SECTION 1 -->
+                    <h4></h4>
+                    <section>
+                        <div class="form-row"> <input type="text" class="form-control" placeholder="Name" name="NAME"> </div>
+                        <div class="form-row"> <input type="email" class="form-control" placeholder="Email" name="EMAIL"> </div>
+                        <div class="form-row"> <input type="number" class="form-control" placeholder="Phone number" name="PHONE"> </div>
+                        <div class="form-row"> <input type="text" class="form-control" placeholder="Chi đoàn, đơn vị"> </div>
+                        <div class="form-row"> <input type="text" class="form-control" placeholder="Ngày tháng năm sinh"> </div>
+                        <div class="form-row"> <input type="text" class="form-control" placeholder="Street address"> </div>
+                    </section> <!-- SECTION 2 -->
+                    <h4></h4>
+                    <section>
+                        <div>Chọn toa tàu mà bạn muốn tham gia</div>
+                        <div class="form-row"> <input type="text" class="form-control" placeholder="country"> </div>
+                        <div class="form-row"> <input type="text" class="form-control" placeholder="country"> </div>
+                        <div class="form-row"> <input type="text" class="form-control" placeholder="country"> </div>
+                        <div class="form-row"> <input type="text" class="form-control" placeholder="zip code"> </div>
+                        <div class="form-row" style="margin-bottom: 18px"> <textarea name="" id="" class="form-control" placeholder="Any order note about delivery or special offer" style="height: 108px"></textarea> 
+                        </div>
+                    </section> 
+                    <!-- SECTION 3 -->
+                    <h4></h4>
+                    <section>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+                            <circle class="path circle" fill="none" stroke="#73AF55" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1" />
+                            <polyline class="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+                        </svg>
+                        <p class="success">Hãy nhấn nút gửi bên dưới để nhận được mail thông tin chuyển khoản</p>
+                        <p class="success">Sau khi nhân nút gửi vào mail của bạn, kiểm tra thông tin và chuyển khoản để đăng ký thành công.</p>
+                        <p class="success">Chúc bạn một ngày tốt lành</p>
+                        <input id="submit" type="submit" class="btn btn-primary" />
+                    </section>
+                </div>
+              </form>
 
-            <form method="post" action="https://script.google.com/macros/s/AKfycbz0igNclVds3XQKy86O3_5rJClT2KJKOr2n31OnvrM2J0skNQkkFnlLfIUmry6jHfqNXw/exec" name="informations-nam" id="informations-nam">
-    
-              <h4>Họ và tên</h4>
-              <input type="text" id="name" class="form-control" name="NAME" placeholder="Ví dụ: Nguyễn Văn A"/>
-              <br >
-              <h4>Email</h4>
-              <input type="email" id="email" class="form-control" name="EMAIL" placeholder="Ví dụ: abc@gmail.com"/>
-              <br >
-              <h4>Số điện thoại</h4>
-              <input type="number" id="number" class="form-control" name="PHONE" placeholder="Ví dụ: 89681234567"/>
-              <br >
-    
-              <input type="submit" value="Send message" id="submit" class="button btn-primary" />
-            </form>
-          </div> -->
-
-          <div id="formHTMLNam"></div>
+              
+          <!-- <div id="formHTMLNam"></div> -->
         </div>
         
         <div id="nu" class="tabcontent">
@@ -561,17 +577,14 @@
     // })
   </script>
 
+
   <!-- insert HTML -->
   <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-  <script> 
-    $(function(){
-      $("#formHTMLNam").load("./formNam.html"); 
-    });
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.min.js"></script>
 
-    $(function(){
-      $("#formHTMLNu").load("./formNu.html"); 
-    });
-  </script> 
+  <!--  -->
+  <script src="form/index.js">
+  </script>
 
 </body>
 
