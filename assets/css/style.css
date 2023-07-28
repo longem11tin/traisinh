@@ -9,10 +9,31 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+@font-face {
+  font-family: 'Moonbandit';
+  font-weight: bold;
+  src: url("./Moonbandit\ -\ MBF\ Space\ Habitat\ Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'SVN-Aguda';
+  src: url("./SVN-Aguda\ Black.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'MBFVietnam';
+  font-weight: bold;
+  src: url("./DFVN\ MBF\ Space\ Habitat\ Regular.otf") format("opentype");
+}
+
 body {
   
+  background-image: url("../img/banner7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   font-family: "Prompt", sans-serif;
-  background: rgba(255, 255, 255);
   color: #000;
 }
 
@@ -33,7 +54,7 @@ h4,
 h5,
 h6,
 p {
-  font-family: "Prompt", sans-serif;
+  font-family: "MBFVietnam", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -140,8 +161,10 @@ tabs
   
   transition: all 0.5s;
   z-index: 997;
-  padding: 15px 0;
-  
+  padding: 8px 0;
+  background: #360067;
+  border-bottom: white solid 1px;
+  color: rgb(221, 221, 231);
 }
 
 @media (max-width: 600px) {
@@ -159,6 +182,7 @@ tabs
     position: relative;
     top: 0px;
     right: 0px;
+    justify-content: flex-end;
   }
 
   #header i {
@@ -175,11 +199,12 @@ tabs
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: rgba(255, 255, 255, 0.9);
+  background: #360067;
+  border-bottom: white solid 1px;
 }
 
 #header .regist {
-  color: #151515;
+  color: #ffffff;
 }
 
 #header .logo-img {
@@ -197,7 +222,7 @@ tabs
 }
 
 #header i {
-  color:rgb(0, 0, 0);
+  color:rgb(235, 235, 247);
 }
 
 #header .logo {
@@ -212,16 +237,21 @@ tabs
 }
 
 #header .logo a {
-  color: #4389C5;
+  color: #dbe8f3;
 }
 
 #header .logo a span {
-  color: #3966DF;
+  color: #f1f2f7;
 }
 
 #header .logo img {
   max-height: 45px;
 }
+
+/*--------------------------------------------------------------
+#  Get Ended Button
+--------------------------------------------------------------*/
+
 
 /*--------------------------------------------------------------
 #  Get Startet Button
@@ -235,17 +265,20 @@ tabs
   font-size: 14px;
   display: inline-block;
   border: 2px solid #3966DF;
+  justify-content: flex-end;
 }
 
 .get-started-btn:hover {
-  background: #6a84ca;
-  color: #343a40;
+  background: transparent;
+  color: #ffffff;
 }
 
 @media (max-width: 992px) {
   .get-started-btn {
-    padding: 7px 20px 8px 20px;
+    /* padding: 7px 20px 8px 20px;
     margin-right: 15px;
+    margin: auto 0; */
+    justify-content: flex-start;
   }
 }
 
@@ -279,7 +312,7 @@ tabs
   padding: 10px 0 10px 30px;
   font-size: 15px;
   font-weight: 600;
-  color: rgb(0, 0, 0);
+  color: rgb(224, 238, 247);
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -295,7 +328,7 @@ tabs
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #3966DF;
+  color: #94bff8;
 }
 
 .navbar .dropdown ul {
@@ -444,7 +477,7 @@ tabs
   z-index: 99;
   opacity: 1;
   visibility: visible;
-  background: #fff;
+  background: transparent;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
@@ -476,7 +509,7 @@ tabs
 --------------------------------------------------------------*/
 #hero {
 
-  margin-top: 20px;
+  margin-top: 10px;
   position: relative;
   width: 100%;
 }
@@ -491,24 +524,26 @@ tabs
 }
 
 #hero img {
-  max-width: 125%;
+  max-width:100%;
   height: auto;
 }
 
 @media (max-width: 767px) {
   #hero img {
-    max-width: 150%;
+    max-width: 100%;
   }
 } 
+
+/*--------------------------------------------------------------
+# Sections Hero-carousel
+--------------------------------------------------------------*/
+
 
 #hero-carousel {
   margin-top: 20px;
 }
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
 
-.title {
+#hero-carousel .title {
   
   font-weight: bold;
   font-family: 'Roboto Slab', sans-serif;
@@ -516,26 +551,66 @@ tabs
   margin-top: 60px;
 }
 
+video {
+
+  padding: 0px 80px 0px;
+}
+
+@media (min-width: 993px) {
+  video {
+    margin-top: 20px;
+    max-width: 100% ;
+    height: auto ;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 681px) and (max-width: 992px) {
+  video {
+    margin-top: 20px;
+    max-width: 100% ;
+    height: auto ;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 680px) {
+  video {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+} 
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+
 /* .title .title-1 {
   color: #4389C5;
 } */
 
 .title h1 {
+  margin: 40px 0 10px;
   font-weight: bold;
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: 'MBFVietnam', sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-size: 2.5em;
-  /* color: #4389C5; */
+  color: #ffffff;
 }
 
 .title h3 {
   font-weight: bold;
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: 'MBFVietnam', sans-serif;
   text-align: center;
   text-transform: uppercase;
-  font-size: 1.25em;
-  /* color: #4389C5; */
+  font-size: 30px;
+  color: #ffffff;
 }
 
 /* desktop  */
@@ -602,7 +677,7 @@ section {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #aaaaaa;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Moonbandit", sans-serif;
 }
 
 .section-title h2::after {
@@ -628,14 +703,14 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background:rgba(255, 255, 255);
-  color: #000;
+  background:rgba(255, 255, 255, 0);
+  color: rgb(255, 255, 255);
 }
 
 .about .content h3 {
   font-weight: 700;
-  font-size: 28px;
-  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  font-family: "SVN-Aguda", sans-serif;
 }
 
 .about .content ul {
@@ -646,6 +721,7 @@ section {
 .about .content ul li {
   padding: 0 0 8px 26px;
   position: relative;
+  font-size: 28px;
 }
 
 .about .content ul i {
@@ -668,6 +744,30 @@ section {
   border-radius: 16px;
   height: 100%;
   width: 100%;
+}
+
+#about .title .title {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+
+  .about .content ul li {
+    padding: 0 0 8px 26px;
+    position: relative;
+    font-size: 20px;
+  }
+
+  video {
+    padding: 0 10px 0;
+  }
+
+  .title h3 {
+    font-size: 17px;
+  }
+  .title h1 {
+    font-size: 18px;
+  }
 }
 
 
@@ -713,10 +813,9 @@ section {
 
   background-position: center center;
   background-size: cover;
-  background-color: #fff;
-  background: rgba(255, 255, 255);
+  background: rgba(255, 255, 255, 0);
   padding-top: 20px;
-  color: #000;
+  color: rgb(255, 255, 255);
 }
 
 .features .icon-box h4 {
@@ -737,7 +836,7 @@ section {
 
 .features .icon-box p {
   font-size: 15px;
-  color: #848484;
+  color: #ffffff;
 }
 
 .features .image {
@@ -752,7 +851,7 @@ section {
 # Services
 --------------------------------------------------------------*/
 .services {
-  background: #fff;
+  background: transparent;
 }
 
 .services ul {
@@ -763,9 +862,18 @@ section {
   list-style-type: disc;
 }
 
-.services .section-title h2, 
-.services .container .section-title p{
-  color: #000;
+.services .section-title {
+  text-align: center;
+  font-family: "SVN-Aguda";
+}
+
+.services .section-title p {
+  font-family: "MBFVietnam";
+  font-size: 40px;
+}
+.services .section-title h5{
+  color: rgb(255, 255, 255);
+  font-size: 30px;
 }
 
 .services .icon-box {
@@ -793,7 +901,7 @@ section {
 }
 
 .services .icon-box .icon i {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 28px;
   transition: ease-in-out 0.3s;
 }
@@ -805,7 +913,7 @@ section {
 }
 
 .services .icon-box h4 a {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   transition: ease-in-out 0.3s;
 }
 
@@ -813,28 +921,23 @@ section {
   color: #3966DF;
 }
 
-.services .icon-box p {
+.services .icon-box p, h5 {
   line-height: 24px;
-  font-size: 14px;
+  font-size: 20px;
+  font-family: "SVN-Aguda";
   margin-bottom: 0;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .services .icon-box:hover {
-  border-color: rgb(0, 0, 0);
+  border-color: rgb(255, 255, 255);
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   transform: translateY(-10px);
 }
 
 .services .container .section-title p {
-  color: rgb(0, 0, 0);
-  font-size: 30px;
+  color: rgb(255, 255, 255);
 }
-
-.count-down {
-  /* text-align: center; */
-}
-
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
@@ -1060,85 +1163,7 @@ section {
 
 /*--------------------------------------------------------------
 # Counts
---------------------------------------------------------------*/
-.counts .content {
-  padding: 30px 0;
-}
-
-.counts .content h3 {
-  font-weight: 700;
-  font-size: 34px;
-  color: #151515;
-}
-
-.counts .content p {
-  margin-bottom: 0;
-}
-
-.counts .content .count-box {
-  padding: 20px 0;
-  width: 100%;
-}
-
-.counts .content .count-box i {
-  display: block;
-  font-size: 36px;
-  color: #3966DF;
-  float: left;
-}
-
-.counts .content .count-box span {
-  font-size: 36px;
-  line-height: 30px;
-  display: block;
-  font-weight: 700;
-  color: #151515;
-  margin-left: 50px;
-}
-
-.counts .content .count-box p {
-  padding: 15px 0 0 0;
-  margin: 0 0 0 50px;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  color: #3b3b3b;
-}
-
-.counts .content .count-box a {
-  font-weight: 600;
-  display: block;
-  margin-top: 20px;
-  color: #3b3b3b;
-  font-size: 15px;
-  font-family: "Open Sans", sans-serif;
-  transition: ease-in-out 0.3s;
-}
-
-.counts .content .count-box a:hover {
-  color: #626262;
-}
-
-.counts .image {
-  background: url("../img/counts-img.jpg") center center no-repeat;
-  background-size: cover;
-  min-height: 400px;
-}
-
-@media (max-width: 991px) {
-  .counts .image {
-    text-align: center;
-  }
-
-  .counts .image img {
-    max-width: 80%;
-  }
-}
-
-@media (max-width: 667px) {
-  .counts .image img {
-    max-width: 100%;
-  }
-}
+--------------------------------------------------------------*
 
 /*--------------------------------------------------------------
 # Testimonials
@@ -1251,7 +1276,7 @@ section {
 # Team
 --------------------------------------------------------------*/
 .team {
-  background: #ffffff;
+  background: transparent;
   padding: 60px 0;
   color: #fff;
 }
@@ -1343,7 +1368,7 @@ section {
 --------------------------------------------------------------*/
 .contact .info {
   width: 100%;
-  background: #fff;
+  background: transparent;
 }
 
 .contact .info i {
@@ -1382,7 +1407,7 @@ section {
 
 .contact .php-email-form {
   width: 100%;
-  background: #fff;
+  background: transparent;
 }
 
 .contact .php-email-form .form-group {
@@ -1413,7 +1438,7 @@ section {
 
 .contact .php-email-form .loading {
   display: none;
-  background: #fff;
+  background: transparent;
   text-align: center;
   padding: 15px;
 }
@@ -1537,7 +1562,7 @@ section {
 }
 
 #footer .red i {
-  color: red;
+  color: rgb(255, 255, 255);
 }
 
 #footer a img {
@@ -1585,11 +1610,11 @@ section {
   color: #3966DF;
 }
 
-#footer .footer-top .footer-info p {
+#footer .footer-top p {
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Prompt", sans-serif;
+  font-family: "SVN-Aguda", sans-serif;
   color: #fff;
 }
 
@@ -1656,7 +1681,7 @@ section {
 
 #footer .footer-top .footer-newsletter form {
   margin-top: 30px;
-  background: #fff;
+  background: transparent;
   padding: 6px 10px;
   position: relative;
   border-radius: 4px;
