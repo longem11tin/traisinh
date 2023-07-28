@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/logoimg.png" rel="icon">
-  <link href="assets/img/logoimg.png" rel="bcsd-icon">
+  <link href="assets/img/logoanh.png" rel="icon">f
+  <link href="assets/img/logocum.png" rel="bcsd-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -34,6 +34,7 @@
 
 
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/form.css" rel="stylesheet">
   <link href="assets/css/count-down.css" rel="stylesheet"> 
   <link href="form/style.css" rel="stylesheet">
 
@@ -105,18 +106,21 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-lg-between">
 
-      <h1 class="logo me-auto me-lg-0">
+      <h1 class="logo me-auto me-lg-0 phone pad">
         <a href="#">
-          <img class="logo-img" src="assets/img/logoimg.png" alt="logo-img">
-          <img class="logo-text" src="assets/img/logo-text-2.webp" alt="logo-text">
+          <img class="logo-img" src="assets/img/logoanh.png" alt="logo-img">
+          <img class="logo-text" src="assets/img/logotext-fotor.png" alt="logo-text">
         </a>
       </h1>
+      <div></div>
 
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        
+      <nav id="navbar" class="navbar order-last order-lg-0">  
+      
         <ul>
+          <li><a class="nav-link scrollto active" href="#hero"></a></li>
           <li><a class="nav-link scrollto active" href="#hero">TỔNG QUAN</a></li>
           <li><a class="nav-link scrollto" href="#about">GIỚI THIỆU</a></li>
+          <li><a class="" href="#"><img class="logo-img" src="assets/img/logoanh.png" alt="logo-img"></a></li>
           <li><a class="nav-link scrollto" href="#services">ĐĂNG KÝ </a></li>
           <li><a class="lien-he nav-link scrollto " href="#footer">LIÊN HỆ</a></li>
         </ul>
@@ -133,7 +137,7 @@
   <!-- ======= Hero Section ======= -->
   <!-- ======= Tổng quan ======= -->
   <section id="hero" class="d-flex align-items-center justify-content-center">
-      <img src="assets/img/bannerchu.jpg" alt="background">
+      <img src="assets/img/banner8.jpg" alt="background">
   </section><!-- End Hero -->
 
 
@@ -258,12 +262,39 @@
       </div>
     </section>
 
+    <div class="title">
+      <h1>Bật mí về trò chơi</h1>
+      <h3>Summer Camp 2023</h3>
+    </div>
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        
+        <div class="row">       
+          
+          <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-left" data-aos-delay="100">
+            <img src="assets/img/tauchay.jpg" class="" alt="tong-quan">
+          </div>
+
+          <div class="tong-quan icon-box col-lg-6 pt-4 pt-lg-0 order-1 order-lg-2 content" data-aos="fade-right" data-aos-delay="100">
+            <!-- <h3>QUYỀN LỢI</h3> -->
+            <ul>
+              <li><i class="tong-quan ri-pushpin-fill"></i><b>Summer Camp đã trởi lại với giao diện mới </b> 
+              <li><i class="tong-quan ri-pushpin-fill"></i></i><b>Summer Camp 2023 "Chuyến Tàu Thời Đại"</b> Năng động nhiệt huyết và bùng nổ
+              <li><i class="tong-quan ri-pushpin-fill"></i><b>Cùng nhau tham gia Summer Camp 2023 "Chuyến Tàu Thời Đại"</b> để có được những phút giây thanh xuân thật bùng cháy ở Nga.
+              <!-- <img src="assets/img/hoitrai/tongquan.png" class="img-fluid" alt=""> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ======= Features Section ======= -->
     <!-- ======= Quyền lợi Section ======= -->
     <div class="title">
       <h1>Thông Tin Đăng Ký</h1>
-      <h3>GIÁ VÉ: 4000 RUB / NGƯỜI</h3>
+      
+      <h3 class="dongkhung">GIÁ VÉ: 4000 RUB / NGƯỜI</h3>
+      <img class="dangky" src="assets/img/240ve.jpg" alt=""/>
       <!-- <h3>GIÁ VÉ: 4000RUB CHO MỘT NGƯỜI</h3> -->
     </div>
     <section id="about" class="features">
@@ -271,13 +302,11 @@
 
         <div class="title">
           <div class="title">
-            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-              <!-- <i class="bx bx-envelope"></i> -->
+            <!-- <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
               <img src="assets/img/hoitrai/ungtuyen.jpg" alt="ung-tuyen">
               <h4>Đăng ký</h4>
               <p>(05.08.2023 - 20.08.2023)</p>
-            </div>
-            <br />
+            </div> -->
             <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
               <div class="container_">
 
@@ -316,74 +345,179 @@
           <button class="tablinks" onclick="openCity(event, 'doingoai')">ĐỐI NGOẠI</button> -->
         </div>
         
+        <!-- Form Nam -->
         <div id="nam" class="tabcontent">
           <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-          <div class="wrapper">
-            <form action="" method="post" name="informations-nam">
-                <div id="wizard">
-                    <!-- SECTION 1 -->
-                    <h4></h4>
-                    <section>
-                        <div class="form-row"> <input type="text" class="form-control" placeholder="Name" name="NAME"> </div>
-                        <div class="form-row"> <input type="email" class="form-control" placeholder="Email" name="EMAIL"> </div>
-                        <div class="form-row"> <input type="number" class="form-control" placeholder="Phone number" name="PHONE"> </div>
-                        <div class="form-row"> <input type="text" class="form-control" placeholder="Chi đoàn, đơn vị"> </div>
-                        <div class="form-row"> <input type="text" class="form-control" placeholder="Ngày tháng năm sinh"> </div>
-                        <div class="form-row"> <input type="text" class="form-control" placeholder="Street address"> </div>
-                    </section> <!-- SECTION 2 -->
-                    <h4></h4>
-                    <section>
-                        <div>Chọn toa tàu mà bạn muốn tham gia</div>
-                        <div class="form-row"> <input type="text" class="form-control" placeholder="country"> </div>
-                        <div class="form-row"> <input type="text" class="form-control" placeholder="country"> </div>
-                        <div class="form-row"> <input type="text" class="form-control" placeholder="country"> </div>
-                        <div class="form-row"> <input type="text" class="form-control" placeholder="zip code"> </div>
-                        <div class="form-row" style="margin-bottom: 18px"> <textarea name="" id="" class="form-control" placeholder="Any order note about delivery or special offer" style="height: 108px"></textarea> 
-                        </div>
-                    </section> 
-                    <!-- SECTION 3 -->
-                    <h4></h4>
-                    <section>
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
-                            <circle class="path circle" fill="none" stroke="#73AF55" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1" />
-                            <polyline class="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 " />
-                        </svg>
-                        <p class="success">Hãy nhấn nút gửi bên dưới để nhận được mail thông tin chuyển khoản</p>
-                        <p class="success">Sau khi nhân nút gửi vào mail của bạn, kiểm tra thông tin và chuyển khoản để đăng ký thành công.</p>
-                        <p class="success">Chúc bạn một ngày tốt lành</p>
-                        <input id="submit" type="submit" class="btn btn-primary" />
-                    </section>
-                </div>
-              </form>
+          <div class="form-wrapper">
+            <form class="form" action="" method="post" name="informations-nam">
+              <div class="title">Chào mừng bạn đến với form đăng ký của Nam</div>
+              <div class="input-container ic1">
+                <label for="firstname">Họ và tên</label>
+                <input id="firstname" class="input" type="text" placeholder="" name="Name" required/>
+              </div>
+              <div class="input-container ic2">
+                <label for="email">Email</label>                
+                <input id="email" class="input" type="email" placeholder="" name="Email"required/>
+              </div>
+              <div class="input-container ic2">
+                <label for="phonenumber">Số điện thoại liên hệ</label>
+                <input id="phonenumber" class="input" type="number" placeholder="" name="PhoneNumber" required/>
+              </div>
+              <div class="input-container ic2">
+                <label for="tendonvi">Tên đơn vị (nếu có)</label>       
+                <input id="tendonvi" class="input" type="text" placeholder="" name="Ten Don vi" />
+              </div>
+              <div class="input-container ic2">
+                <label for="tentrgdaihoc">Tên trường đại học hiện tại (nếu có)</label>       
+                <input id="tentrgdaihoc" class="input" type="text" placeholder="" name="Ten Truong Dai hoc" />
+              </div>
+              <div class="input-container ic2">
+                <label for="birthday">Ngày tháng năm sinh</label>
+                <input id="birthday" class="input" type="date" placeholder="" name="Ngay sinh" required/>
+              </div>
 
-              
-          <!-- <div id="formHTMLNam"></div> -->
+              <br />
+              <label class="toataulabel"for="toataulan1"> Có 10 toa tàu đại diện cho 10 nhóm</label>
+              <div class="toatau-img">
+                <img class="toataualone" src="./toatau5.jpg" alt="Toa 1"/>
+                <img class="toataualone" src="./toatau5.jpg" alt="Toa 2"/>
+                <img class="toataualone" src="./toatau5.jpg" alt="Toa 3"/>
+                <img class="toataualone" src="./toatau5.jpg" alt="Toa 4"/>
+                <img class="toataualone" src="./toatau5.jpg" alt="Toa 5"/>
+                <img class="toataualone" src="./toatau5.jpg" alt="Toa 6"/>
+                <img class="toataualone" src="./toatau5.jpg" alt="Toa 7"/>
+                <img class="toataualone" src="./toatau5.jpg" alt="Toa 8"/>
+                <img class="toataualone" src="./toatau5.jpg" alt="Toa 9"/>
+                <img class="toataualone" src="./toatau5.jpg" alt="Toa 10"/>
+              </div>
+
+              <div class="chontoa">
+                <br />
+                <label for="Toa tau lan 1">Chọn Toa Tàu lần 1:</label>
+                <br />
+                <select class="select" name="Toa tau lan 1" id="toatau">
+                  <option value="Tau1">Tàu 1</option>
+                  <option value="Tau2">Tàu 2</option>
+                  <option value="Tau3">Tàu 3</option>
+                  <option value="Tau4">Tàu 4</option>
+                  <option value="Tau5">Tàu 5</option>
+                  <option value="Tau6">Tàu 6</option>
+                  <option value="Tau7">Tàu 7</option>
+                  <option value="Tau8">Tàu 8</option>
+                  <option value="Tau9">Tàu 9</option>
+                  <option value="Tau10">Tàu 10</option>
+                </select>
+              </div>
+
+              <div class="chontoa">
+                <label for="Toa tau lan 2">Chọn Toa Tàu lần 2:</label>
+                <br />
+                <select class="select" name="Toa tau lan 2" id="toatau">
+                  <option value="Tau1">Tàu 1</option>
+                  <option value="Tau2">Tàu 2</option>
+                  <option value="Tau3">Tàu 3</option>
+                  <option value="Tau4">Tàu 4</option>
+                  <option value="Tau5">Tàu 5</option>
+                  <option value="Tau6">Tàu 6</option>
+                  <option value="Tau7">Tàu 7</option>
+                  <option value="Tau8">Tàu 8</option>
+                  <option value="Tau9">Tàu 9</option>
+                  <option value="Tau10">Tàu 10</option>
+                </select>
+              </div>
+
+              <button name="submit" type="submit" class="submit">submit</button>
+            </form>
+          </div>
         </div>
-        
+
+        <!-- Form Nu -->
         <div id="nu" class="tabcontent">
           <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-          <!-- <div>
+          <div class="form-wrapper">
+            <form class="form" action="" method="post" name="informations-nu">
+              <div class="title">Chào mừng bạn đến với form đăng ký của Nữ</div>
+              <div class="input-container ic1">
+                <label for="firstname">Họ và tên</label>
+                <input id="firstname" class="input" type="text" placeholder="" name="Name" required/>
+              </div>
+              <div class="input-container ic2">
+                <label for="email">Email</label>                
+                <input id="email" class="input" type="email" placeholder="" name="Email"required/>
+              </div>
+              <div class="input-container ic2">
+                <label for="phonenumber">Số điện thoại liên hệ</label>
+                <input id="phonenumber" class="input" type="number" placeholder="" name="PhoneNumber" required/>
+              </div>
+              <div class="input-container ic2">
+                <label for="tendonvi">Tên đơn vị (nếu có)</label>       
+                <input id="tendonvi" class="input" type="text" placeholder="" name="Ten Don vi" />
+              </div>
+              <div class="input-container ic2">
+                <label for="tentrgdaihoc">Tên trường đại học hiện tại (nếu có)</label>       
+                <input id="tentrgdaihoc" class="input" type="text" placeholder="" name="Ten Truong Dai hoc" />
+              </div>
+              <div class="input-container ic2">
+                <label for="birthday">Ngày tháng năm sinh</label>
+                <input id="birthday" class="input" type="date" placeholder="" name="Ngay sinh" required/>
+              </div>
 
-            <form method="post" action="https://script.google.com/macros/s/AKfycbzEWS8LU5QGyBCc1jFYgp2UgEbwnf3KJcIbcDwFxVGZOWnlqrNJFCRgmLjDC833earF/exec" name="informations-nu" id="informations-nu">
-    
-              <h4>Họ và tên</h4>
-              <input type="text" id="name" class="form-control" name="NAME" placeholder="Ví dụ: Nguyễn Thị C"/>
-              <br >
-              <h4>Email</h4>
-              <input type="email" id="email" class="form-control" name="EMAIL" placeholder="Ví dụ: abc@gmail.com"/>
-              <br >
-              <h4>Số điện thoại</h4>
-              <input type="number" id="number" class="form-control" name="PHONE" placeholder="Ví dụ: 89681234567"/>
-              <br >
-    
-              <input type="submit" value="Send message" id="submit" class="button btn-primary" />
+              <br />
+              <label class="toataulabel"for="toataulan1"> Có 10 toa tàu đại diện cho 10 nhóm</label>
+              <div class="toatau-img">
+                <img class="toataualone" src="./toatau5.jpg" alt="Toa 1"/>
+                <img class="toataualone" src="./toatau5.jpg" alt="Toa 2"/>
+                <img class="toataualone" src="./toatau5.jpg" alt="Toa 3"/>
+                <img class="toataualone" src="./toatau5.jpg" alt="Toa 4"/>
+                <img class="toataualone" src="./toatau5.jpg" alt="Toa 5"/>
+                <img class="toataualone" src="./toatau5.jpg" alt="Toa 6"/>
+                <img class="toataualone" src="./toatau5.jpg" alt="Toa 7"/>
+                <img class="toataualone" src="./toatau5.jpg" alt="Toa 8"/>
+                <img class="toataualone" src="./toatau5.jpg" alt="Toa 9"/>
+                <img class="toataualone" src="./toatau5.jpg" alt="Toa 10"/>
+              </div>
+
+              <div class="chontoa">
+                <br />
+                <label for="Toa tau lan 1">Chọn Toa Tàu lần 1:</label>
+                <br />
+                <select class="select" name="Toa tau lan 1" id="toatau">
+                  <option value="Tau1">Tàu 1</option>
+                  <option value="Tau2">Tàu 2</option>
+                  <option value="Tau3">Tàu 3</option>
+                  <option value="Tau4">Tàu 4</option>
+                  <option value="Tau5">Tàu 5</option>
+                  <option value="Tau6">Tàu 6</option>
+                  <option value="Tau7">Tàu 7</option>
+                  <option value="Tau8">Tàu 8</option>
+                  <option value="Tau9">Tàu 9</option>
+                  <option value="Tau10">Tàu 10</option>
+                </select>
+              </div>
+
+              <div class="chontoa">
+                <label for="Toa tau lan 2">Chọn Toa Tàu lần 2:</label>
+                <br />
+                <select class="select" name="Toa tau lan 2" id="toatau">
+                  <option value="Tau1">Tàu 1</option>
+                  <option value="Tau2">Tàu 2</option>
+                  <option value="Tau3">Tàu 3</option>
+                  <option value="Tau4">Tàu 4</option>
+                  <option value="Tau5">Tàu 5</option>
+                  <option value="Tau6">Tàu 6</option>
+                  <option value="Tau7">Tàu 7</option>
+                  <option value="Tau8">Tàu 8</option>
+                  <option value="Tau9">Tàu 9</option>
+                  <option value="Tau10">Tàu 10</option>
+                </select>
+              </div>
+
+              <button name="submit" type="submit" class="submit">submit</button>
             </form>
-          </div> -->
-
-          <!-- <div id="formHTMLNu"></div> -->
+          </div>
         </div>
 
-      </div>
+        </div>
       <!-- End Tabs Section -->
 
     </section>
@@ -403,8 +537,8 @@
 
         <div class="row">
           <div class="col-lg-6 col-md-6"> 
-            <a href="#"><img src="assets/img/logoimg.png" class="img-fluid"/></a>
-            <a href="#"><img src="assets/img/logotxt.png" class="img-fluid maytinh"/></a>
+            <a href="#"><img src="assets/img/logoimgmain.jpg" class="img-fluid"/></a>
+            <a href="#"><img src="assets/img/logotext-fotor.png" class="img-fluid maytinh"/></a>
             <p>
               Summer Camp 2023 - Chuyến tàu thời đại được tổ chức bởi Ban Cán sự Đoàn tại Liên bang Nga với mục đích tạo ra sân chơi cho các bạn sinh viên đang học tập tại Liên bang Nga.
             </p>
@@ -517,7 +651,7 @@
 
   <!-- GG sheet -->
   <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbz0igNclVds3XQKy86O3_5rJClT2KJKOr2n31OnvrM2J0skNQkkFnlLfIUmry6jHfqNXw/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyZKzilrgr1cmsydmd1_jc3glemlF6ZIGaFggUAQ3PoQbxQBY1-3ezf47Jm4x6xarJX4Q/exec'
     const formNam = document.forms['informations-nam']
 
     formNam.addEventListener('submit', e => {
@@ -528,16 +662,16 @@
       .catch(error => console.error('Error!', error.message))
     })
 
-    // const scriptURLNU = 'https://script.google.com/macros/s/AKfycbzEWS8LU5QGyBCc1jFYgp2UgEbwnf3KJcIbcDwFxVGZOWnlqrNJFCRgmLjDC833earF/exec'
-    // const formNu = document.forms['informations-nu']
+    const scriptURLNU = 'https://script.google.com/macros/s/AKfycbx1Ox8G8aYZWua6vYrEcYSkCgUSLfqUK9Y21f6dMstqIKsLUaf5aHp_JgoeQkf9nOVGZw/exec'
+    const formNu = document.forms['informations-nu']
 
-    // formNu.addEventListener('submit', e => {
-    //   e.preventDefault()
-    //   fetch(scriptURLNU, { method: 'POST', body: new FormData(formNu)})
-    //   .then(response => alert("Thank you! your form is submitted successfully." ))
-    //   .then(() => { console.log('da thanh cong') })
-    //   .catch(error => console.error('Error!', error.message))
-    // })
+    formNu.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURLNU, { method: 'POST', body: new FormData(formNu)})
+      .then(response => alert("Thank you! your form is submitted successfully." ))
+      .then(() => { console.log('da thanh cong') })
+      .catch(error => console.error('Error!', error.message))
+    })
   </script>
 
 

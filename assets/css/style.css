@@ -182,7 +182,7 @@ tabs
     position: relative;
     top: 0px;
     right: 0px;
-    justify-content: flex-end;
+    padding: 3px 10px 3px;
   }
 
   #header i {
@@ -190,6 +190,16 @@ tabs
     top: 0;
     right: 0px;
     color: white;
+  }
+}
+
+@media (max-width: 1200px) {
+  #header .regist {
+    /* display: none; */
+    position: relative;
+    top: 0px;
+    right: 0px;
+    justify-content: flex-end;
   }
 }
 
@@ -204,7 +214,16 @@ tabs
 }
 
 #header .regist {
+  color: #360067;
+  background-color: #ffffff;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#header .regist:hover {
   color: #ffffff;
+  background-color: #360067;
 }
 
 #header .logo-img {
@@ -212,12 +231,12 @@ tabs
 }
 
 #header img {
-  width: 40px;
+  width: 50px;
 }
 
 #header .logo-text {
   position: relative;
-  width: 173px;
+  width: 180px;
   height: auto;
 }
 
@@ -394,6 +413,12 @@ tabs
 
   .navbar .dropdown .dropdown:hover>ul {
     left: -100%;
+  }
+}
+
+@media (max-width:1010px) {
+  .navbar ul img {
+    display: none;
   }
 }
 
@@ -594,6 +619,13 @@ video {
   color: #4389C5;
 } */
 
+.title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
 .title h1 {
   margin: 40px 0 10px;
   font-weight: bold;
@@ -613,17 +645,43 @@ video {
   color: #ffffff;
 }
 
+.title .dangky {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 40px;
+  margin-top: 30px;
+}
+
+.title .dongkhung {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 20px 20px 20px;
+  border:rgb(182, 188, 226) solid 2px;
+  border-radius: 5px;
+}
+
 /* desktop  */
-@media (min-width: 993px) {
+@media (min-width: 1025px) {
   .title .chuyen-tau-pad,
   .title .chuyen-tau-phone {
     display: none;
   }
 
+  .phone {
+    display: none;
+  }
+
+  .pad {
+    display: none;
+  }
 } 
 
 /* Pad */
-@media (min-width: 681px) and (max-width: 992px) {
+@media (min-width: 681px) and (max-width: 1024px) {
   .title .chuyentau, 
   .title .chuyen-tau-phone {
     display: none;
@@ -633,6 +691,7 @@ video {
   #team .section-title p {
     font-size: 30px;
   }
+
 }
 
 /* Phone */
@@ -641,7 +700,7 @@ video {
   .title .chuyen-tau-pad {
     display: none;
   }
-  #header .logo-img {
+  #header .logo-text {
     display: none;
   }
 
@@ -656,6 +715,7 @@ video {
   #team .section-title p {
     font-size: 22px;
   }
+
 }
 
 section {
@@ -1572,7 +1632,7 @@ section {
 
 #footer a .maytinh {
   width: 200px;
-  height: 150px;
+  height: auto;
 }
 
 #footer p {
@@ -1603,7 +1663,7 @@ section {
   line-height: 1;
   font-weight: 600;
   /* text-transform: uppercase; */
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "SVN-Aguda", sans-serif;
 }
 
 #footer .footer-top .footer-info h3 span {
@@ -1653,7 +1713,7 @@ section {
 
 #footer .footer-top .icon-1 i {
   padding-right: 2px;
-  color: #df3939;
+  color: #93D5ED;
   font-size: 18px;
   line-height: 1;
 }
@@ -1676,7 +1736,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #3966DF;
+  color: #93D5ED;
 }
 
 #footer .footer-top .footer-newsletter form {
