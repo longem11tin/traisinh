@@ -293,6 +293,16 @@ tabs
   animation: glowing 1500ms infinite;
 }
 
+.glowing-traisinh {
+
+  border-radius: 4px;
+  display: block;
+  animation: glowing 1500ms infinite;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+
 .get-started-btn {
   color: #fff;
   border-radius: 4px;
@@ -553,7 +563,7 @@ tabs
 --------------------------------------------------------------*/
 #hero {
 
-  margin-top: 10px;
+  margin-top: 50px;
   position: relative;
   width: 100%;
 }
@@ -577,7 +587,7 @@ tabs
     max-width: 100%;
   }
   #hero {
-    margin-top: 0px;
+    margin-top: 40px;
   } 
 } 
 
@@ -731,14 +741,73 @@ video {
   .title .dongkhung {
     font-size: 20px;
   }
+  
+  .title h1 {
+    font-family: 'MBFVietnam', sans-serif;
+    font-size: 20px;
+
+  }
+  
+  .title h3 {
+    font-family: 'MBFVietnam', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  
+  .title .dangky {
+    font-family: 'MBFVietnam', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+
+  .services .section-title p {
+    font-family: "MBFVietnam";
+    font-size: 20px;
+  }
+
+  .team .img-fluid-1 {
+    margin-left: 0%;
+  }
+
+  .team .truongban .member-1 {
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+  }
 
 }
 
 /* Phone */
 @media (max-width: 680px) {
 
-  .title .dongkhung h3{
-    font-size: 14px;
+  .title .dongkhung {
+    font-size: 18px;
+  }
+  
+  .title h1 {
+    font-family: 'MBFVietnam', sans-serif;
+    font-size: 18px;
+
+  }
+  
+  .title h3 {
+    font-family: 'MBFVietnam', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+  
+  .title .dangky {
+    font-family: 'MBFVietnam', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+
+  .team .img-fluid-1 {
+    margin-left: 0%;
   }
 
   #header {
@@ -754,15 +823,15 @@ video {
   }
 
   .title .title-1 {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .title h1 {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   #team .section-title p {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .services .section-title img {
@@ -771,13 +840,19 @@ video {
   }
 
   .title .dongkhung {
-    font-size: 20px;
+    font-size: 18px;
+  }
+
+  .team .truongban .member-1 {
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
   }
 
 }
 
 section {
-  padding: 60px 0 0 0;
+  padding: 20px 0 0 0;
   overflow: hidden;
 }
 
@@ -868,6 +943,13 @@ section {
   text-align: center;
 }
 
+#about {
+  margin-bottom: 20px;
+}
+
+#timeline {
+  margin-top: -10px;
+}
 @media (max-width: 768px) {
 
   .about .content ul li {
@@ -968,6 +1050,8 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+
+
 .services {
   background: transparent;
 }
@@ -991,7 +1075,7 @@ section {
 }
 
 .services .section-title img {
-  width: 80%;
+  width: 70%;
   border-radius: 10px;
 }
 
@@ -1296,18 +1380,34 @@ section {
 # quy mo ch tr
 --------------------------------------------------------------*/
 
-.quymochtr {
+.quymochtr-1 {
+
+  width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin: 10px 0;
 }
 
-.title-quymo {
-  width: 33.33%;
-  padding: 10px 10px;
-  display: block;
-  border: 1px solid #fff;
-  border-radius: 3px;
+.quymochtr {
+
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 10px 0;
 }
+
+.quymochtr .title {
+  display: block;
+  border: 2px solid #fff;
+  padding: 20px;
+  border-radius: 5%;
+}
+
+.quymochtr p{
+  font-family: "SVN-Aguda", sans-serif;
+  font-size: 20px;
+}
+
 
 /*--------------------------------------------------------------
 # Testimonials
@@ -1419,6 +1519,7 @@ section {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
+
 .team {
   background: transparent;
   padding: 60px 0;
@@ -1506,6 +1607,31 @@ section {
 .team .container .section-title p {
   color: rgb(255, 255, 255);
 }
+
+.truongban {
+  margin-left: 0%;
+}
+
+.team .img-fluid-1 {
+  position: relative;
+  justify-content: center;
+  max-width: 70%;
+  border-radius: 50%;
+  height: 70%;
+}
+
+.team .truongban .member-1 {
+  margin: 20px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.team .truongban .member-1 p {
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+
 
 /*--------------------------------------------------------------
 # Contact

@@ -1,13 +1,29 @@
 
 .swiper-container-wrapper--timeline .swiper-slide {
     display: flex;
-    background: #fff;
+    background: rgba(255, 255, 255, 0);
     min-height: 300px;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
   }
-.container-hinhanhhoitrai {
+
+  .swiper-slide .timeline-1 {
+    color: #fff;
+  }
+
+  .swiper-slide .timeline-1 img {
+    width: 99%;
+    border-radius: 2%;
+    padding: 20px;
+  }
+
+  .swiper-slide .timeline-1 p {
+    margin: 30px ;
+    font-size: 27px;
+  }
+
+  .container-hinhanhhoitrai {
     padding: 0;
     width: 100%;
   }
@@ -16,6 +32,14 @@
     opacity: 0;
     transition: 0.5s ease 0.5s;
   }
+
+  .swiper-container-wrapper--timeline .swiper-slide img{
+    display: block;
+    position: relative;
+    justify-content: center;
+    /* width: 80%; */
+  }
+
   .swiper-container-wrapper--timeline .swiper-slide-active .title {
     opacity: 1;
   }
@@ -86,7 +110,7 @@
     transform: translateX(50%) translateY(-50%);
     width: 12px;
     height: 12px;
-    background: #000;
+    background: rgb(10, 10, 10);
     border-radius: 2rem;
     content: "";
     transition: 0.2s all ease-in-out;
@@ -98,16 +122,23 @@
     transition-delay: 0.4s;
   }
   .swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch.active .switch-title:after {
-    background: #000;
+    background: rgb(255, 255, 255);
     width: 25px;
     height: 25px;
     transition-delay: 0.4s;
   }
   .swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch.active ~ .swiper-pagination-switch .switch-title {
-    color: #888;
+    color: rgb(255, 255, 255);
     font-weight: 16px;
   }
   .swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch.active ~ .swiper-pagination-switch .switch-title:after {
-    background: #888;
+    background: rgb(224, 216, 228);
+  }
+
+  .swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch .switch-title {
+    color: rgb(224, 216, 228);
   }
   
+  .swiper-slide .swiper-slide{
+    background: transparent;
+  }

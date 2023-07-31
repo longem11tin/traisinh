@@ -36,6 +36,9 @@
     position: relative;
     width: 100%;
 }
+.form .trang {
+    color: #fff;
+}
 
 .form .ic1 {
     margin-top: 30px;

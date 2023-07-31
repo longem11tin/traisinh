@@ -2,7 +2,7 @@ $(document).ready(function () {
     var mySwiper = new Swiper(".swiper", {
       autoHeight: true,
       autoplay: {
-        delay: 2000,
+        delay: 3000,
         disableOnInteraction: false
       },
       speed: 500,
