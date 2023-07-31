@@ -10,11 +10,11 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/logoanh.png" rel="icon">f
-  <link href="assets/img/logocum.png" rel="bcsd-icon">
+  <link href="assets/img/logo-plz-img.png" rel="icon">
+  <!-- <link href="assets/img/logocum.png" rel="bcsd-icon"> -->
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> -->
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -31,22 +31,25 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
-
-
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/form.css" rel="stylesheet">
   <link href="assets/css/count-down.css" rel="stylesheet"> 
   <link href="form/style.css" rel="stylesheet">
+  <link href="assets/css/timeline.css" rel="stylesheet">
+  <link href="assets/css/flicker-button.css" rel="stylesheet">
+  <link href="assets/css/hinhanhhoitrai.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <style>
     /* body {font-family: Arial;} */
     
+
+
     /* Style the tab */
     .tab {
       overflow: hidden;
-      border: 1px solid #ccc;
-      background-color: #f1f1f1;
+      border: 4px solid #fff;
+      background-color: #ffffff00;
     }
     
     /* Style the buttons inside the tab */
@@ -63,19 +66,19 @@
     
     /* Change background color of buttons on hover */
     .tab button:hover {
-      background-color: #ddd;
+      background-color: #360067;
     }
     
     /* Create an active/current tablink class */
     .tab button.active {
-      background-color: #ccc;
+      background-color: #360067;
     }
     
     /* Style the tab content */
     .tabcontent {
       display: none;
       padding: 6px 12px;
-      border: 1px solid #ccc;
+      border: 4px solid #ccc;
       border-top: none;
     }
     
@@ -87,6 +90,16 @@
     }
     
     .topright:hover {color: blue;}
+
+    .tablinks {
+      width: 50%;
+      color: white;
+    }
+
+    .tabs .tab .tablinks-nu {
+      border-left: 4px solid #fff;
+    }
+
 
   </style>
   <!-- <link href="assets/css/count-down_2.css" rel="stylesheet">  -->
@@ -108,8 +121,8 @@
 
       <h1 class="logo me-auto me-lg-0 phone pad">
         <a href="#">
-          <img class="logo-img" src="assets/img/logoanh.png" alt="logo-img">
-          <img class="logo-text" src="assets/img/logotext-fotor.png" alt="logo-text">
+          <img class="logo-img" src="assets/img/logo-plz-img.png" alt="logo-img">
+          <img class="logo-text" src="assets/img/logotext-plz-final.png" alt="logo-text">
         </a>
       </h1>
       <div></div>
@@ -118,9 +131,11 @@
       
         <ul>
           <li><a class="nav-link scrollto active" href="#hero"></a></li>
-          <li><a class="nav-link scrollto active" href="#hero">TỔNG QUAN</a></li>
+          <li><a class="nav-link scrollto active" href="#">TỔNG QUAN</a></li>
           <li><a class="nav-link scrollto" href="#about">GIỚI THIỆU</a></li>
-          <li><a class="" href="#"><img class="logo-img" src="assets/img/logoanh.png" alt="logo-img"></a></li>
+          <li><a class="nav-link scrollto" href="#about">BAN TỔ CHỨC</a></li>
+          <li><a class="" href="#"><img class="logo-img" src="assets/img/logo-plz-img.png" alt="logo-img"></a></li>
+          <li><a class="nav-link scrollto" href="#timeline">TIME LINE </a></li>
           <li><a class="nav-link scrollto" href="#services">ĐĂNG KÝ </a></li>
           <li><a class="lien-he nav-link scrollto " href="#footer">LIÊN HỆ</a></li>
         </ul>
@@ -129,7 +144,6 @@
       <!-- .navbar -->
 
       <a href="#services" class="regist get-started-btn scrollto">Đăng ký ngay</a>
-
     </div>
   </header><!-- End Header -->
 
@@ -137,93 +151,13 @@
   <!-- ======= Hero Section ======= -->
   <!-- ======= Tổng quan ======= -->
   <section id="hero" class="d-flex align-items-center justify-content-center">
-      <img src="assets/img/banner8.jpg" alt="background">
+      <img src="assets/img/banner-plz-final.png" alt="background">
   </section><!-- End Hero -->
 
 
   <main id="main">
 
-
-    <!-- ======= Carousel Section ======= -->
-    <!-- ======= Giới thiệu Section ======= -->
-
-    <!-- <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="title"> 
-        <h1 class="title-1">Tổng quan về chương trình</h1>
-      </div>
-
-      <div class="title">
-        <h1>Hình ảnh</h1>
-      </div>
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
-        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
-        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
-      </div>
-  
-      <div class="carousel-inner">
-        <div class="carousel-item active c-item">
-          <img src="assets/img/hoitrai/hoitrai-24.jpg" class="d-block w-100 c-img" alt="Slide 1">
-          <div class="carousel-caption top-0 mt-4">
-          </div>
-        </div>
-        <div class="carousel-item c-item">
-          <img src="assets/img/hoitrai/hoitrai-23.jpg" class="d-block w-100 c-img" alt="Slide 2">
-          <div class="carousel-caption top-0 mt-4">
-          </div>
-        </div>
-        <div class="carousel-item c-item">
-          <img src="assets/img/hoitrai/hoitrai32.jpg" class="d-block w-100 c-img" alt="Slide 3">
-          <div class="carousel-caption top-0 mt-4">
-          </div>
-        </div>
-
-        <div class="carousel-item c-item">
-          <img src="assets/img/hoitrai/hoitrai-1.jpg" class="d-block w-100 c-img" alt="Slide 4">
-          <div class="carousel-caption top-0 mt-4">
-          </div>
-        </div>
-
-        <div class="carousel-item c-item">
-          <img src="assets/img/hoitrai/hoitrai-2.jpg" class="d-block w-100 c-img" alt="Slide 5">
-          <div class="carousel-caption top-0 mt-4">
-          </div>
-        </div>
-
-        <div class="carousel-item c-item">
-          <img src="assets/img/hoitrai/luatrai-2.jpg" class="d-block w-100 c-img" alt="Slide 6">
-          <div class="carousel-caption top-0 mt-4">
-          </div>
-        </div>
-
-        <div class="carousel-item c-item">
-          <img src="assets/img/hoitrai/luatrai-3.jpg" class="d-block w-100 c-img" alt="Slide 7">
-          <div class="carousel-caption top-0 mt-4">
-          </div>
-        </div>
-
-        <div class="carousel-item c-item">
-          <img src="assets/img/hoitrai/hoitrai-7.jpg" class="d-block w-100 c-img" alt="Slide 8">
-          <div class="carousel-caption top-0 mt-4">
-          </div>
-        </div>
-
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div> -->
-
+    <!-- Tong quan video -->
     <div class="title">
       <h1>Tổng quan chương trình</h1>
     </div>
@@ -244,47 +178,193 @@
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
         
-        <div class="row">          
-          <div class="tong-quan icon-box col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
-            <!-- <h3>QUYỀN LỢI</h3> -->
-            <ul>
-              <li><i class="tong-quan ri-pushpin-fill"></i><b>Summer Camp đã trởi lại với giao diện mới </b> 
-              <li><i class="tong-quan ri-pushpin-fill"></i></i><b>Summer Camp 2023 "Chuyến Tàu Thời Đại"</b> Năng động nhiệt huyết và bùng nổ
-              <li><i class="tong-quan ri-pushpin-fill"></i><b>Cùng nhau tham gia Summer Camp 2023 "Chuyến Tàu Thời Đại"</b> để có được những phút giây thanh xuân thật bùng cháy ở Nga.
-              <!-- <img src="assets/img/hoitrai/tongquan.png" class="img-fluid" alt=""> -->
-            </ul>
-          </div>
+        <div class="row">  
 
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-            <img src="assets/img/tauchay.jpg" class="" alt="tong-quan">
+          <div class="" data-aos="fade-left" data-aos-delay="100">
+            <img src="assets/img/thongtin.jpg" class="" alt="tong-quan">
           </div>
         </div>
       </div>
     </section>
 
-    <div class="title">
+    <!-- <div class="title">
       <h1>Bật mí về trò chơi</h1>
       <h3>Summer Camp 2023</h3>
-    </div>
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-        
-        <div class="row">       
-          
-          <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-left" data-aos-delay="100">
-            <img src="assets/img/tauchay.jpg" class="" alt="tong-quan">
-          </div>
-
-          <div class="tong-quan icon-box col-lg-6 pt-4 pt-lg-0 order-1 order-lg-2 content" data-aos="fade-right" data-aos-delay="100">
-            <!-- <h3>QUYỀN LỢI</h3> -->
-            <ul>
-              <li><i class="tong-quan ri-pushpin-fill"></i><b>Summer Camp đã trởi lại với giao diện mới </b> 
-              <li><i class="tong-quan ri-pushpin-fill"></i></i><b>Summer Camp 2023 "Chuyến Tàu Thời Đại"</b> Năng động nhiệt huyết và bùng nổ
-              <li><i class="tong-quan ri-pushpin-fill"></i><b>Cùng nhau tham gia Summer Camp 2023 "Chuyến Tàu Thời Đại"</b> để có được những phút giây thanh xuân thật bùng cháy ở Nga.
-              <!-- <img src="assets/img/hoitrai/tongquan.png" class="img-fluid" alt=""> -->
-            </ul>
-          </div>
+    </div> -->
+    <section id="timeline" class="timeline">
+      <div class="ag-timeline-block">
+        <div class="ag-timeline_title-box">
+          <div class="ag-timeline_tagline">Timeline Chương trình</div>
+          <div class="ag-timeline_tagline">02.09 - 03.09.2023</div>
         </div>
+        <section class="ag-section">
+          <div class="ag-format-container">
+            <div class="js-timeline ag-timeline">
+              <div class="js-timeline_line ag-timeline_line">
+                <div class="js-timeline_line-progress ag-timeline_line-progress"></div>
+              </div>
+              <div class="ag-timeline_list">
+
+                <!-- timline 1 -->
+                <div class="js-timeline_item ag-timeline_item">
+                  <div class="ag-timeline-card_box">
+                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                      <div class="ag-timeline-card_point">I</div>
+                    </div>
+                    <div class="ag-timeline-card_meta-box">
+                      <div class="ag-timeline-card_meta">I</div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_item">
+                    <div class="ag-timeline-card_inner">
+                      <div class="ag-timeline-card_img-box">
+                        <img src="https://i.gifer.com/D2s.gif" class="ag-timeline-card_img" width="640" height="360" />
+                      </div>
+                      <div class="ag-timeline-card_info">
+                        <div class="ag-timeline-card_title">Xuất phát</div>
+                        <div class="ag-timeline-card_desc">
+                          8 giờ bắt đầu xuất phát
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ag-timeline-card_arrow"></div>
+                  </div>
+                </div>
+      
+                <!-- timline 2 -->
+                <div class="js-timeline_item ag-timeline_item">
+                  <div class="ag-timeline-card_box">
+                    <div class="ag-timeline-card_meta-box">
+                      <div class="ag-timeline-card_meta">II</div>
+                    </div>
+                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                      <div class="ag-timeline-card_point">II</div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_item">
+                    <div class="ag-timeline-card_inner">
+                      <div class="ag-timeline-card_img-box">
+                        <img src="assets/img/timeline/khaimac.jpeg" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                      </div>
+                      <div class="ag-timeline-card_info">
+                        <div class="ag-timeline-card_title">Khai mạc</div>
+                        <div class="ag-timeline-card_desc">
+                          13h30 Khai mạc
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ag-timeline-card_arrow"></div>
+                  </div>
+                </div>
+      
+                <!-- timline 3 -->
+                <div class="js-timeline_item ag-timeline_item">
+                  <div class="ag-timeline-card_box">
+                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                      <div class="ag-timeline-card_point">III</div>
+                    </div>
+                    <div class="ag-timeline-card_meta-box">
+                      <div class="ag-timeline-card_meta">III</div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_item">
+                    <div class="ag-timeline-card_inner">
+                      <div class="ag-timeline-card_img-box">
+                        <img src="assets/img/timeline/khaimac.jpeg" alt=""/>
+                      </div>
+                      <div class="ag-timeline-card_info">
+                        <div class="ag-timeline-card_title">Chơi trò chơi</div>
+                        <div class="ag-timeline-card_desc">
+                          Đến nơi sau khi xong khai mạc mọi người sẽ bắt đầu chơi trò chơi
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ag-timeline-card_arrow"></div>
+                  </div>
+                </div>
+      
+                <!-- timline 4 -->
+                <div class="js-timeline_item ag-timeline_item">
+                  <div class="ag-timeline-card_box">
+                    <div class="ag-timeline-card_meta-box">
+                      <div class="ag-timeline-card_meta">IV</div>
+                    </div>
+                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                      <div class="ag-timeline-card_point">IV</div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_item">
+                    <div class="ag-timeline-card_inner">
+                      <div class="ag-timeline-card_img-box">
+                        <img src="assets/img/timeline/khaimac.jpeg" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                      </div>
+                      <div class="ag-timeline-card_info">
+                        <div class="ag-timeline-card_title">Đốt lửa trại và đêm Gala</div>
+                        <div class="ag-timeline-card_desc">
+                          Sau một ngày vui chơi hết mình thì mình bắt đầu đốt lửa trại và đêm Gala quẩy hết mình.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ag-timeline-card_arrow"></div>
+                  </div>
+                </div>
+
+                <!-- timline 5 -->
+                <div class="js-timeline_item ag-timeline_item">
+                  <div class="ag-timeline-card_box">
+                    <div class="ag-timeline-card_meta-box">
+                      <div class="ag-timeline-card_meta">V</div>
+                    </div>
+                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                      <div class="ag-timeline-card_point">V</div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_item">
+                    <div class="ag-timeline-card_inner">
+                      <div class="ag-timeline-card_img-box">
+                        <img src="assets/img/timeline/khaimac.jpeg" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                      </div>
+                      <div class="ag-timeline-card_info">
+                        <div class="ag-timeline-card_title">Escape game</div>
+                        <div class="ag-timeline-card_desc">
+                          Chúng ta sẽ được chơi Escape game
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ag-timeline-card_arrow"></div>
+                  </div>
+                </div>
+
+                <!-- timline 6 -->
+                <div class="js-timeline_item ag-timeline_item">
+                  <div class="ag-timeline-card_box">
+                    <div class="ag-timeline-card_meta-box">
+                      <div class="ag-timeline-card_meta">VI</div>
+                    </div>
+                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                      <div class="ag-timeline-card_point">VI</div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_item">
+                    <div class="ag-timeline-card_inner">
+                      <div class="ag-timeline-card_img-box">
+                        <img src="assets/img/timeline/khaimac.jpeg" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                      </div>
+                      <div class="ag-timeline-card_info">
+                        <div class="ag-timeline-card_title">Bế mạc</div>
+                        <div class="ag-timeline-card_desc">
+                          17h30 chúng ta sẽ bết mạc và đi về
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ag-timeline-card_arrow"></div>
+                  </div>
+                </div>
+      
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </section>
 
@@ -293,8 +373,9 @@
     <div class="title">
       <h1>Thông Tin Đăng Ký</h1>
       
-      <h3 class="dongkhung">GIÁ VÉ: 4000 RUB / NGƯỜI</h3>
-      <img class="dangky" src="assets/img/240ve.jpg" alt=""/>
+      <!-- <h3 class="dongkhung">GIÁ VÉ: 4000 RUB / NGƯỜI</h3> -->
+      <a href="#services" class="dongkhung button"><h3>GIÁ VÉ: 3900 RUB / NGƯỜI</h3></a>
+      <img class="dangky" src="assets/img/240vetachnen.png" alt=""/>
       <!-- <h3>GIÁ VÉ: 4000RUB CHO MỘT NGƯỜI</h3> -->
     </div>
     <section id="about" class="features">
@@ -326,21 +407,16 @@
 
       <div class="container" data-aos="fade-up">
 
-      <div class="section-title">
+      <div class="title section-title">
         <p>hạng mục đăng ký</p>
-        <br />
-        <h5>Tổng số vé sẽ là 240 vé</h5>
-        <br />
-        <h5>Nam 120 vé và Nữ 120 vé</h5>
-        <br />
-        <h5>Sẽ có hai hình thức đăng ký</h5>
+        <img class="ve-img" src="assets/img/240vetraisinh.png" alt="240 trai sinh"/>
       </div>
 
       <!-- ======= Tabs Section ======= -->
       <div class="tabs">
         <div class="tab">
-          <button class="tablinks" onclick="openCity(event, 'nam')" id="defaultOpen">DÀNH CHO NAM</button>
-          <button class="tablinks" onclick="openCity(event, 'nu')">DÀNH CHO NỮ</button>
+          <button class="title tablinks" onclick="openCity(event, 'nam')" id="defaultOpen">Trại sinh nam</button>
+          <button class="title tablinks tablinks-nu" onclick="openCity(event, 'nu')">Trại sinh nữ</button>
           <!-- <button class="tablinks" onclick="openCity(event, 'taichinh')">TÀI CHÍNH</button>
           <button class="tablinks" onclick="openCity(event, 'doingoai')">ĐỐI NGOẠI</button> -->
         </div>
@@ -350,7 +426,7 @@
           <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
           <div class="form-wrapper">
             <form class="form" action="" method="post" name="informations-nam">
-              <div class="title">Chào mừng bạn đến với form đăng ký của Nam</div>
+              <div class="title">Đăng ký cho trại sinh nam</div>
               <div class="input-container ic1">
                 <label for="firstname">Họ và tên</label>
                 <input id="firstname" class="input" type="text" placeholder="" name="Name" required/>
@@ -376,7 +452,7 @@
                 <input id="birthday" class="input" type="date" placeholder="" name="Ngay sinh" required/>
               </div>
 
-              <br />
+              <!-- <br />
               <label class="toataulabel"for="toataulan1"> Có 10 toa tàu đại diện cho 10 nhóm</label>
               <div class="toatau-img">
                 <img class="toataualone" src="./toatau5.jpg" alt="Toa 1"/>
@@ -389,41 +465,44 @@
                 <img class="toataualone" src="./toatau5.jpg" alt="Toa 8"/>
                 <img class="toataualone" src="./toatau5.jpg" alt="Toa 9"/>
                 <img class="toataualone" src="./toatau5.jpg" alt="Toa 10"/>
+              </div> -->
+
+
+              <br>
+              <div class="toatau-img chontoa">
+                <input  type="radio" name="toatau" id="toa1" value="toa 1" class="input-hidden" />
+                <label for="toa1"> <img src="./toatau5.jpg" alt="toa 1" /> </label>
+
+                <input type="radio" name="toatau" id="toa2" value="toa 2" class="input-hidden" />
+                <label for="toa2"> <img src="./toatau5.jpg" alt="toa 2" /> </label>
+
+                <input  type="radio" name="toatau" id="toa3" value="toa 3" class="input-hidden" />
+                <label for="toa3"> <img src="./toatau5.jpg" alt="toa 3" /> </label>
+
+                <input type="radio" name="toatau" id="toa4" value="toa 4 " class="input-hidden" />
+                <label for="toa4"> <img src="./toatau5.jpg" alt="toa 4" /> </label>
+
+                <input  type="radio" name="toatau" id="toa5" value="toa 5" class="input-hidden" />
+                <label for="toa5"> <img src="./toatau5.jpg" alt="toa 5" /> </label>
+
+                <input type="radio" name="toatau" id="toa6" value="toa 6" class="input-hidden" />
+                <label for="toa6"> <img src="./toatau5.jpg" alt="toa 6" /> </label>
+
+                <input  type="radio" name="toatau" id="toa7" value="toa 7" class="input-hidden" />
+                <label for="toa7"> <img src="./toatau5.jpg" alt="toa 7" /> </label>
+
+                <input type="radio" name="toatau" id="toa8" value="toa 8" class="input-hidden" />
+                <label for="toa8"> <img src="./toatau5.jpg" alt="toa 8" /> </label>
+
+                <input  type="radio" name="toatau" id="toa9" value="toa 9" class="input-hidden" />
+                <label for="toa9"> <img src="./toatau5.jpg" alt="toa 9" /> </label>
+
+                <input type="radio" name="toatau" id="toa10" value="toa 10" class="input-hidden" />
+                <label for="toa10"> <img src="./toatau5.jpg" alt="toa 10" /> </label>
               </div>
 
-              <div class="chontoa">
-                <br />
-                <label for="Toa tau lan 1">Chọn Toa Tàu lần 1:</label>
-                <br />
-                <select class="select" name="Toa tau lan 1" id="toatau">
-                  <option value="Tau1">Tàu 1</option>
-                  <option value="Tau2">Tàu 2</option>
-                  <option value="Tau3">Tàu 3</option>
-                  <option value="Tau4">Tàu 4</option>
-                  <option value="Tau5">Tàu 5</option>
-                  <option value="Tau6">Tàu 6</option>
-                  <option value="Tau7">Tàu 7</option>
-                  <option value="Tau8">Tàu 8</option>
-                  <option value="Tau9">Tàu 9</option>
-                  <option value="Tau10">Tàu 10</option>
-                </select>
-              </div>
-
-              <div class="chontoa">
-                <label for="Toa tau lan 2">Chọn Toa Tàu lần 2:</label>
-                <br />
-                <select class="select" name="Toa tau lan 2" id="toatau">
-                  <option value="Tau1">Tàu 1</option>
-                  <option value="Tau2">Tàu 2</option>
-                  <option value="Tau3">Tàu 3</option>
-                  <option value="Tau4">Tàu 4</option>
-                  <option value="Tau5">Tàu 5</option>
-                  <option value="Tau6">Tàu 6</option>
-                  <option value="Tau7">Tàu 7</option>
-                  <option value="Tau8">Tàu 8</option>
-                  <option value="Tau9">Tàu 9</option>
-                  <option value="Tau10">Tàu 10</option>
-                </select>
+              <div class="luu-y">
+                <p>Lưu ý: Khi số lượng nam và nữ đủ, bạn đăng ký sẽ vào hàng chờ</p>
               </div>
 
               <button name="submit" type="submit" class="submit">submit</button>
@@ -436,7 +515,7 @@
           <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
           <div class="form-wrapper">
             <form class="form" action="" method="post" name="informations-nu">
-              <div class="title">Chào mừng bạn đến với form đăng ký của Nữ</div>
+              <div class="title">Đăng ký cho trại sinh nữ</div>
               <div class="input-container ic1">
                 <label for="firstname">Họ và tên</label>
                 <input id="firstname" class="input" type="text" placeholder="" name="Name" required/>
@@ -463,7 +542,7 @@
               </div>
 
               <br />
-              <label class="toataulabel"for="toataulan1"> Có 10 toa tàu đại diện cho 10 nhóm</label>
+              <!-- <label class="toataulabel"for="toataulan1"> Có 10 toa tàu đại diện cho 10 nhóm</label>
               <div class="toatau-img">
                 <img class="toataualone" src="./toatau5.jpg" alt="Toa 1"/>
                 <img class="toataualone" src="./toatau5.jpg" alt="Toa 2"/>
@@ -475,41 +554,43 @@
                 <img class="toataualone" src="./toatau5.jpg" alt="Toa 8"/>
                 <img class="toataualone" src="./toatau5.jpg" alt="Toa 9"/>
                 <img class="toataualone" src="./toatau5.jpg" alt="Toa 10"/>
+              </div> -->
+
+              <br>
+              <div class="toatau-img chontoa">
+                <input  type="radio" name="toatau-nu" id="toa11" value="toa 1" class="input-hidden" />
+                <label for="toa11"> <img src="./toatau5.jpg" alt="toa 1" /> </label>
+
+                <input type="radio" name="toatau-nu" id="toa12" value="toa 2" class="input-hidden" />
+                <label for="toa12"> <img src="./toatau5.jpg" alt="toa 2" /> </label>
+
+                <input  type="radio" name="toatau-nu" id="toa13" value="toa 3" class="input-hidden" />
+                <label for="toa13"> <img src="./toatau5.jpg" alt="toa 3" /> </label>
+
+                <input type="radio" name="toatau-nu" id="toa14" value="toa 4 " class="input-hidden" />
+                <label for="toa14"> <img src="./toatau5.jpg" alt="toa 4" /> </label>
+
+                <input  type="radio" name="toatau-nu" id="toa15" value="toa 5" class="input-hidden" />
+                <label for="toa15"> <img src="./toatau5.jpg" alt="toa 5" /> </label>
+
+                <input type="radio" name="toatau-nu" id="toa16" value="toa 6" class="input-hidden" />
+                <label for="toa16"> <img src="./toatau5.jpg" alt="toa 6" /> </label>
+
+                <input  type="radio" name="toatau-nu" id="toa17" value="toa 7" class="input-hidden" />
+                <label for="toa17"> <img src="./toatau5.jpg" alt="toa 7" /> </label>
+
+                <input type="radio" name="toatau-nu" id="toa18" value="toa 8" class="input-hidden" />
+                <label for="toa18"> <img src="./toatau5.jpg" alt="toa 8" /> </label>
+
+                <input  type="radio" name="toatau-nu" id="toa19" value="toa 9" class="input-hidden" />
+                <label for="toa19"> <img src="./toatau5.jpg" alt="toa 9" /> </label>
+
+                <input type="radio" name="toatau-nu" id="toa20" value="toa 10" class="input-hidden" />
+                <label for="toa20"> <img src="./toatau5.jpg" alt="toa 10" /> </label>
               </div>
 
-              <div class="chontoa">
-                <br />
-                <label for="Toa tau lan 1">Chọn Toa Tàu lần 1:</label>
-                <br />
-                <select class="select" name="Toa tau lan 1" id="toatau">
-                  <option value="Tau1">Tàu 1</option>
-                  <option value="Tau2">Tàu 2</option>
-                  <option value="Tau3">Tàu 3</option>
-                  <option value="Tau4">Tàu 4</option>
-                  <option value="Tau5">Tàu 5</option>
-                  <option value="Tau6">Tàu 6</option>
-                  <option value="Tau7">Tàu 7</option>
-                  <option value="Tau8">Tàu 8</option>
-                  <option value="Tau9">Tàu 9</option>
-                  <option value="Tau10">Tàu 10</option>
-                </select>
-              </div>
-
-              <div class="chontoa">
-                <label for="Toa tau lan 2">Chọn Toa Tàu lần 2:</label>
-                <br />
-                <select class="select" name="Toa tau lan 2" id="toatau">
-                  <option value="Tau1">Tàu 1</option>
-                  <option value="Tau2">Tàu 2</option>
-                  <option value="Tau3">Tàu 3</option>
-                  <option value="Tau4">Tàu 4</option>
-                  <option value="Tau5">Tàu 5</option>
-                  <option value="Tau6">Tàu 6</option>
-                  <option value="Tau7">Tàu 7</option>
-                  <option value="Tau8">Tàu 8</option>
-                  <option value="Tau9">Tàu 9</option>
-                  <option value="Tau10">Tàu 10</option>
-                </select>
+              <div class="luu-y">
+                <p>Lưu ý: Khi số lượng nam và nữ đủ, khi bạn đăng ký sẽ vào hàng chờ</p>
               </div>
 
               <button name="submit" type="submit" class="submit">submit</button>
@@ -523,9 +604,385 @@
     </section>
 
 
+    <section id="team" class="team">
+      <div class="container" data-aos="fade-up">
 
-    <!-- End Services Section -->
+        <!-- <div class="section-title">
+          <p>BAN TỔ CHỨC</p>
+        </div> -->
 
+        <!-- Hang 1 -->
+        <div class="row">
+          <div class="title section-title">
+            <p>BAN CHỈ ĐẠO VÀ CỐ VẤN</p>
+          </div>
+          <div class="col-lg-3 col-md-4 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/team/final/anhHaii.jpg" class="img-fluid" alt="anh Hai">
+              </div>
+              <div class="member-info">
+                <span>Anh Ngô Bá Hoàng Hải</span>
+                <span>Ban Chỉ đạo</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="assets/img/team/final/anhLinhh.jpg" class="img-fluid" alt="anh Linh">
+              </div>
+              <div class="member-info">
+                <span>Anh Nguyễn Việt Linh</span>
+                <span>Trưởng Ban tổ chức</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="assets/img/team/final/anhThuann.jpg" class="img-fluid" alt="anh Thuan">
+              </div>
+              <div class="member-info">
+                <span>Anh Trần Phú Thuận</span>
+                <span>Ban Cố vấn</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="assets/img/team/final/chiHoaa.jpg" class="img-fluid" alt="chi Hoa">
+              </div>
+              <div class="member-info">
+                <span>Cô Mai Nguyễn Tuyết Hoa</span>
+                <span>Ban Cố vấn</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hang 2 -->
+        <div class=" row">
+          <div class="title section-title">
+            <p>PHÓ BAN TỔ CHỨC</p>
+          </div>
+          <div class=" col-lg-3 col-md-4 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="assets/img/team/final/anhduc.jpeg" class="img-fluid" alt="anh Duc">
+              </div>
+              <div class="member-info">
+                <span>Anh Lê Huỳnh Đức</span>
+                <span>Phó Ban tổ chức</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="member-img">
+                <img src="assets/img/team/final/anhDuy.jpeg" class="img-fluid" alt="anh Duy">
+              </div>
+              <div class="member-info">
+                <span>Anh Nguyễn Khánh Duy</span>
+                <span>Phó Ban tổ chức</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="smartphone-ngang col-lg-3 col-md-4 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+            </div>
+          </div>
+        </div>
+
+        <!-- Hang 3 -->
+        <div class="row">
+          <div class="title section-title">
+            <p>CÁC BAN TỔ CHỨC</p>
+          </div>
+
+          <!-- Anh 1 -->
+          <div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/btc/btc1.jpeg" class="img-fluid" alt="btc1">
+              </div>
+            </div>
+          </div>
+
+          <!-- Anh 2 -->
+          <div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="assets/img/btc/btc2.jpeg" class="img-fluid" alt="btc2">
+              </div>
+            </div>
+          </div>
+          
+          <!-- Anh 3 -->
+          <div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="assets/img/btc/btc3.jpeg" class="img-fluid" alt="btc3">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hang 4 -->
+        <div class="row">
+          <!-- <div class="title section-title">
+            <p>BAN TỔ CHỨC</p>
+          </div> -->
+
+          <!-- Anh 1 -->
+          <div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/btc/btc4.jpeg" class="img-fluid" alt="btc4">
+              </div>
+            </div>
+          </div>
+
+          <!-- Anh 2 -->
+          <div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="assets/img/btc/btc5.jpeg" class="img-fluid" alt="btc5">
+              </div>
+            </div>
+          </div>
+          
+          <!-- Anh 3 -->
+          <div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="assets/img/btc/btc6.jpeg" class="img-fluid" alt="btc6">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
+    </section>
+    
+    <!-- Nha Tai Tro  -->
+    <section id="team" class="team">
+      <div class="container" data-aos="fade-up">
+
+        <!-- Hang 1 -->
+        <div class="row">
+          <div class="title section-title">
+            <p>Nhà tài trợ chương trình</p>
+          </div>
+          <div class="col-lg-4 d-flex align-items-center">
+          </div>
+          <div class="col-lg-4 d-flex align-items-center">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="kim-cuong title section-title">
+                Nhà Tài trợ kim cương
+              </div>
+              <div class="member-img">
+                <img src="assets/img/team/final/anhHaii.jpg" class="img-fluid" alt="anh Hai">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex align-items-center">
+          </div>
+
+        </div>
+
+        <!-- Hang 2 -->
+        <div class=" row">
+          <div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="vang title section-title">
+                Nhà Tài trợ vàng
+              </div>
+              <div class="member-img">
+                <img src="assets/img/team/final/anhHaii.jpg" class="img-fluid" alt="anh Hai">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="bac title section-title">
+                Nhà Tài trợ bạc
+              </div>
+              <div class="member-img">
+                <img src="assets/img/team/final/anhHaii.jpg" class="img-fluid" alt="anh Hai">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="dong title section-title">
+                Nhà Tài trợ đồng
+              </div>
+              <div class="member-img">
+                <img src="assets/img/team/final/anhHaii.jpg" class="img-fluid" alt="anh Hai">
+              </div>
+            </div>
+          </div>
+          
+        </div>  
+    </section>
+
+    <!-- Quy mo chuong trinh -->
+    <section id="team" class="team">
+      <div class="container" data-aos="fade-up">
+
+        <!-- Hang 1 -->
+        <div class="row">
+          <div class="title section-title">
+            <p>Quy mô chương trình</p>
+          </div>
+          <!-- <div class="col-lg-4 d-flex align-items-center"> -->
+          <div class="kim-cuong title section-title">
+            <a href="#services" class="dongkhung button"><p>240 TRẠI SINH</p>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Hang 2 -->
+        <div class="quymochtr">
+          <div class="quymo1">
+              <div class="title-quymo">
+                <h3 class="dongkhung">60 BAN TỔ CHỨC</h3>
+              </div>
+          </div>
+
+          <div class="quymo2">
+            <div class="title-quymo">
+              <h3 class="dongkhung">10 TRẠI</h3>
+            </div>
+          </div>
+
+          <div class="quymo3">
+            <div class="title-quymo">
+              <h3 class="dongkhung">100 KHÁCH MỜI</h3>
+            </div>
+          </div>
+          
+        </div>  
+    </section>
+
+  <!-- End Services Section -->
+
+  <section id="quyenloitraisinh" class="timeline">
+    <div class="ag-timeline-block">
+      <div class="ag-timeline_title-box">
+        <div class="ag-timeline_tagline">
+          quyền lợi trại sinh
+        </div>
+      </div>
+      <section class="ag-section">
+        <div class="ag-format-container">
+          <div class="js-timeline ag-timeline">
+            <div class="js-timeline_line ag-timeline_line">
+              <div class="js-timeline_line-progress ag-timeline_line-progress"></div>
+            </div>
+            <div class="ag-timeline_list">
+
+              <!-- timline 1 -->
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">I</div>
+                  </div>
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Đồ ăn</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <img src="https://static.zoonar.com/img/www_repository5/e2/7f/03/10_e884ecbcc654702607c48abbec6c07b3.jpg" class="ag-timeline-card_img"  />
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_title">Đồ ăn</div>
+                      <div class="ag-timeline-card_desc">
+                        Sẽ gòm có:
+                        Phở + thịt + Mỳ tôm
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+    
+              <!-- timline 2 -->
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Quà tặng</div>
+                  </div>
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">II</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <img src="https://img.etimg.com/thumb/width-1200,height-900,imgsize-12478,resizemode-75,msid-98156428/top-trending-products/gifts/12-unique-and-best-selling-birthday-gifts-under-rs-999.jpg" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_title">Quà tặng</div>
+                      <div class="ag-timeline-card_desc">
+                        Các phần quà sẽ đón chờ các bạn mở ra.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+    
+    
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <section id="hinhanhhoitrai" class="hinhanhhoitrai">
+    <div class="container-hinhanhhoitrai">
+      <div class="swiper-container-wrapper swiper-container-wrapper--timeline">
+        <!-- Timeline -->
+        <ul class="swiper-pagination-custom">
+          <li class='swiper-pagination-switch first active'><span class='switch-title'>Khu cắm trại</span></li>
+          <li class='swiper-pagination-switch'><span class='switch-title'>Khung cảnh thiên nhiên</span></li>
+          <li class='swiper-pagination-switch'><span class='switch-title'>An Ninh</span></li>
+          <li class='swiper-pagination-switch last'><span class='switch-title'>Cơ sở vật chất</span></li>
+        </ul>
+        <!-- Progressbar -->
+        <div class="swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal"></div>
+        <!-- Swiper -->
+        <div class="swiper swiper-container swiper-container--timeline">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><span class="title">Swiper Timeline Progressbar</span></div>
+            <div class="swiper-slide"><span class="title">Title 2</span></div>
+            <div class="swiper-slide"><span class="title">Title 3</span></div>
+            <div class="swiper-slide"><span class="title">Title 4</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
   </main><!-- End #main -->
@@ -537,8 +994,8 @@
 
         <div class="row">
           <div class="col-lg-6 col-md-6"> 
-            <a href="#"><img src="assets/img/logoimgmain.jpg" class="img-fluid"/></a>
-            <a href="#"><img src="assets/img/logotext-fotor.png" class="img-fluid maytinh"/></a>
+            <a href="#"><img src="assets/img/logo-plz-img.png" class="img-fluid"/></a>
+            <a href="#"><img src="assets/img/logotext-plz-final.png" class="img-fluid maytinh"/></a>
             <p>
               Summer Camp 2023 - Chuyến tàu thời đại được tổ chức bởi Ban Cán sự Đoàn tại Liên bang Nga với mục đích tạo ra sân chơi cho các bạn sinh viên đang học tập tại Liên bang Nga.
             </p>
@@ -563,13 +1020,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="copyright">
-      </div>
-      <div class="credits">
       </div>
     </div>
   </footer>
@@ -618,7 +1068,7 @@
     const fourthOfJuly = new Date().getTime();
     const fourthOfJulyNextYear = new Date().getTime();
     const month = new Date().getMonth();
-    const countDownDate = new Date("Aug 10, 2023 20:00:00").getTime();
+    const countDownDate = new Date("Aug 5, 2023 20:00:00").getTime();
 
     // countdown
     let timer = setInterval(function() {
@@ -680,8 +1130,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.min.js"></script>
 
   <!--  -->
-  <script src="form/index.js">
-  </script>
+  <script src="form/index.js"></script>
+  <script src="assets/js/timeline.js"></script>
+  <script src="assets/js/hinhanhhoitrai.js"></script>
 
 </body>
 

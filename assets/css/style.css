@@ -33,7 +33,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  font-family: "Prompt", sans-serif;
+  font-family: "SVN-Aguda" ;
   color: #000;
 }
 
@@ -52,9 +52,12 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
   font-family: "MBFVietnam", sans-serif;
+}
+
+p {
+  font-family: "SVN-Aguda", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -96,6 +99,10 @@ p {
 tabs
 --------------------------------------------------------------*/
 
+.title {
+  color : white;
+  text-align: center;
+}
 
 /*--------------------------------------------------------------
 tabs
@@ -109,7 +116,6 @@ tabs
 
 /*--------------------------------------------------------------
 # Preloader
---------------------------------------------------------------*/
 #preloader {
   position: fixed;
   top: 0;
@@ -161,7 +167,7 @@ tabs
   
   transition: all 0.5s;
   z-index: 997;
-  padding: 8px 0;
+  /* padding: 8px 0; */
   background: #360067;
   border-bottom: white solid 1px;
   color: rgb(221, 221, 231);
@@ -214,7 +220,7 @@ tabs
 }
 
 #header .regist {
-  color: #360067;
+  color: #ffffff;
   background-color: #ffffff;
   border-radius: 5px;
   font-weight: bold;
@@ -231,7 +237,7 @@ tabs
 }
 
 #header img {
-  width: 50px;
+  width: 45px;
 }
 
 #header .logo-text {
@@ -271,10 +277,22 @@ tabs
 #  Get Ended Button
 --------------------------------------------------------------*/
 
+/* .dangky {
+  display: block;
+  justify-content: flex-end;
+  animation: glowing 1500ms infinite;
+} */
 
 /*--------------------------------------------------------------
 #  Get Startet Button
 --------------------------------------------------------------*/
+
+.button {
+  border-radius: 4px;
+  display: block;
+  animation: glowing 1500ms infinite;
+}
+
 .get-started-btn {
   color: #fff;
   border-radius: 4px;
@@ -282,9 +300,10 @@ tabs
   white-space: nowrap;
   transition: 0.3s;
   font-size: 14px;
-  display: inline-block;
-  border: 2px solid #3966DF;
+  display: block;
+  /* border: 2px solid #3966DF; */
   justify-content: flex-end;
+  animation: glowing 1500ms infinite;
 }
 
 .get-started-btn:hover {
@@ -557,6 +576,9 @@ tabs
   #hero img {
     max-width: 100%;
   }
+  #hero {
+    margin-top: 0px;
+  } 
 } 
 
 /*--------------------------------------------------------------
@@ -649,7 +671,7 @@ video {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 80%;
   border-radius: 40px;
   margin-top: 30px;
 }
@@ -664,8 +686,11 @@ video {
   border-radius: 5px;
 }
 
+
+
 /* desktop  */
 @media (min-width: 1025px) {
+
   .title .chuyen-tau-pad,
   .title .chuyen-tau-phone {
     display: none;
@@ -678,24 +703,48 @@ video {
   .pad {
     display: none;
   }
+
 } 
 
 /* Pad */
 @media (min-width: 681px) and (max-width: 1024px) {
+
+  #header {
+    padding: 8px 0;
+  }
+
   .title .chuyentau, 
   .title .chuyen-tau-phone {
     display: none;
   }
 
 
-  #team .section-title p {
+  #team .section-title {
     font-size: 30px;
+    color: #fff;
+  }
+
+  .services .section-title img {
+    width: 70%;
+  }
+
+  .title .dongkhung {
+    font-size: 20px;
   }
 
 }
 
 /* Phone */
 @media (max-width: 680px) {
+
+  .title .dongkhung h3{
+    font-size: 14px;
+  }
+
+  #header {
+    padding: 8px 0;
+  }
+
   .title .chuyentau,
   .title .chuyen-tau-pad {
     display: none;
@@ -716,6 +765,15 @@ video {
     font-size: 22px;
   }
 
+  .services .section-title img {
+    width: 50%;
+    height: auto;
+  }
+
+  .title .dongkhung {
+    font-size: 20px;
+  }
+
 }
 
 section {
@@ -725,7 +783,8 @@ section {
 
 .section-title {
 
-  padding-bottom: 40px;
+  padding: 30px 0 10px;
+  color: #fff;
 }
 
 .section-title h2 {
@@ -755,8 +814,7 @@ section {
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
-  color: #151515;
+  font-family: "MBFVietnam", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -931,6 +989,12 @@ section {
   font-family: "MBFVietnam";
   font-size: 40px;
 }
+
+.services .section-title img {
+  width: 80%;
+  border-radius: 10px;
+}
+
 .services .section-title h5{
   color: rgb(255, 255, 255);
   font-size: 30px;
@@ -944,8 +1008,15 @@ section {
 }
 
 .services .tab button {
-  font-size: 14px;
+  font-size: 20px;
 }
+
+.tabs .luu-y {
+  margin-top: 5px;
+  color: red;
+  font-size: 20px;
+}
+
 
 .services .icon-box .icon {
   margin: 0 auto;
@@ -1222,8 +1293,21 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Counts
---------------------------------------------------------------*
+# quy mo ch tr
+--------------------------------------------------------------*/
+
+.quymochtr {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.title-quymo {
+  width: 33.33%;
+  padding: 10px 10px;
+  display: block;
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
 
 /*--------------------------------------------------------------
 # Testimonials
@@ -1420,8 +1504,18 @@ section {
 }
 
 .team .container .section-title p {
-  color: #000;
+  color: rgb(255, 255, 255);
 }
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+
+.nhataitro .diamond {
+  color: blue;
+}
+
+
 
 /*--------------------------------------------------------------
 # Contact
