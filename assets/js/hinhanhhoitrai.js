@@ -2,10 +2,10 @@ $(document).ready(function () {
     var mySwiper = new Swiper(".swiper", {
       autoHeight: true,
       autoplay: {
-        delay: 3000,
+        delay: 2000,
         disableOnInteraction: false
       },
-      speed: 500,
+      speed: 1000,
       direction: "horizontal",
       navigation: {
         nextEl: ".swiper-button-next",

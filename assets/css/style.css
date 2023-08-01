@@ -108,13 +108,29 @@ tabs
 tabs
 --------------------------------------------------------------*/
 
+.c-item {
+  width: 50%;
+  position: relative;
+  left: 25%;
+}
 
 .c-img {
-  height: 100%;
+
+  width: 50%;
+  border-radius: 5%;
+  height: auto;
   object-fit: cover;
 }
 
+
+.services .title .dangkyy h3 {
+  font-family: "SVN-Aguda", sans-serif;
+  font-size: 28px;
+}
+
 /*--------------------------------------------------------------
+
+
 # Preloader
 #preloader {
   position: fixed;
@@ -330,12 +346,17 @@ tabs
   }
 }
 
+
+
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
 * Desktop Navigation 
 */
+
+
 .navbar {
   padding: 0;
 }
@@ -681,7 +702,7 @@ video {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 60%;
   border-radius: 40px;
   margin-top: 30px;
 }
@@ -690,13 +711,16 @@ video {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 60%;
   padding: 20px 20px 20px;
   border:rgb(182, 188, 226) solid 2px;
   border-radius: 5px;
+  font-size: 30px;
 }
 
-
+.services .section-title p {
+  font-size: 30px;
+}
 
 /* desktop  */
 @media (min-width: 1025px) {
@@ -740,6 +764,7 @@ video {
 
   .title .dongkhung {
     font-size: 20px;
+    width: 90%;
   }
   
   .title h1 {
@@ -777,13 +802,32 @@ video {
     text-align: center;
   }
 
+  .services .container .section-title p {
+    font-size: 22px;
+  }
+
+  .services .title .dangkyy h3 {
+    font-family: "SVN-Aguda", sans-serif;
+    font-size: 22px;
+  }
+
+  .team .section-title p {
+    font-size: 22px;
+  }
+
+  .swiper-slide .timeline-1 p {
+    font-size: 20px;
+  }
+
 }
 
 /* Phone */
 @media (max-width: 680px) {
 
-  .title .dongkhung {
-    font-size: 18px;
+  .services .dongkhung {
+    font-family: "SVN-Aguda", sans-serif;
+    font-size: 10px;
+    width: 90%;
   }
   
   .title h1 {
@@ -847,6 +891,23 @@ video {
     margin: 20px 0;
     width: 100%;
     text-align: center;
+  }
+
+  .services .container .section-title p {
+    font-size: 16px;
+  }
+
+  .services .title .dangkyy h3 {
+    font-family: "SVN-Aguda", sans-serif;
+    font-size: 12px;
+  }
+
+  .team .section-title p {
+    font-size: 18px;
+  }
+
+  .quyenloi .container-hinhanhhoitrai .swiper-slide .timeline-1 p {
+    font-size: 16px;
   }
 
 }
@@ -963,7 +1024,7 @@ section {
   }
 
   .title h3 {
-    font-size: 17px;
+    font-size: 11px;
   }
   .title h1 {
     font-size: 18px;
@@ -1051,6 +1112,11 @@ section {
 # Services
 --------------------------------------------------------------*/
 
+.services .section-title p {
+  margin-top: 12px;
+  font-family: "MBFVietnam";
+  font-size: 40px;
+}
 
 .services {
   background: transparent;
@@ -1069,10 +1135,6 @@ section {
   font-family: "SVN-Aguda";
 }
 
-.services .section-title p {
-  font-family: "MBFVietnam";
-  font-size: 40px;
-}
 
 .services .section-title img {
   width: 70%;
@@ -1153,6 +1215,12 @@ section {
 .services .container .section-title p {
   color: rgb(255, 255, 255);
 }
+
+.services .section-title .font-30 p {
+  font-family: "MBFVietnam";
+  font-size: 30px;
+}
+
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
@@ -1830,6 +1898,14 @@ section {
     display: inline-block;
   }
 }
+
+/*--------------------------------------------------------------
+# quyen loi
+--------------------------------------------------------------*/
+
+/* .swiper-container-wrapper--timeline .swiper-slide .box-img{
+  border-radius: 5%;
+} */
 
 /*--------------------------------------------------------------
 # Footer

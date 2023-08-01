@@ -7,6 +7,18 @@
     justify-content: center;
     border-radius: 10px;
   }
+  
+
+  .timeline-title {
+    text-align: center;
+  }
+  
+  .timeline-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+
 
   .swiper-slide .timeline-1 {
     color: #fff;
@@ -45,7 +57,7 @@
   }
   .swiper-container-wrapper--timeline .swiper-pagination-progressbar {
     position: relative;
-    margin-bottom: 70px;
+    margin-bottom: 20px;
     background-color: transparent;
     height: 4px;
     border-bottom: 1px solid #888;
@@ -141,4 +153,25 @@
   
   .swiper-slide .swiper-slide{
     background: transparent;
+  }
+
+  /* Desktop */
+
+  @media (min-width: 1025px) {
+
+  } 
+  
+  /* Pad */
+  @media (min-width: 681px) and (max-width: 1024px) {
+    .timeline-title {
+      text-align: center;
+    }
+  
+  }
+  
+  /* Phone */
+  @media (max-width: 680px) {
+    .timeline-grid {
+      display: block;
+    }
   }

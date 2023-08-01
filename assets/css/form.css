@@ -123,16 +123,20 @@
 
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-gap: 20px;
+    grid-gap: 5px;
 
+}
+
+.white {
+    color: #fff;
+}
+
+.form .toatau-img {
+    text-align: center;
 }
 
 .form .toatau-img .toataualone {
     width: 200px;
-}
-
-.form .toatau-img .toataualone:hover + hide {
-    display: block;
 }
 
 
