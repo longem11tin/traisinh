@@ -68,6 +68,10 @@
     .tab button:hover {
       background-color: #360067;
     }
+
+    .tab button:hover {
+      display: block;
+    }
     
     /* Create an active/current tablink class */
     .tab button.active {
@@ -98,6 +102,12 @@
 
     .tabs .tab .tablinks-nu {
       border-left: 4px solid #fff;
+    }
+
+    .tabs .chudangky {
+      text-align: center;
+      font-size: 20px;
+      font-family: "SVG-Aguda";
     }
 
 
@@ -131,7 +141,7 @@
       
         <ul>
           <li><a class="nav-link scrollto active" href="#hero"></a></li>
-          <li><a class="nav-link scrollto active" href="#">TỔNG QUAN</a></li>
+          <li><a class="nav-link scrollto active" href="#tongquanmain">TỔNG QUAN</a></li>
           <li><a class="nav-link scrollto" href="#about">GIỚI THIỆU</a></li>
           <li><a class="nav-link scrollto" href="#timeline">TIMELINE </a></li>
           <li><a class="" href="#"><img class="logo-img" src="assets/img/logo-plz-img.png" alt="logo-img"></a></li>
@@ -161,11 +171,13 @@
     <div class="title">
       <h1>Tổng quan chương trình</h1>
     </div>
-    <div class="video-banner">
-      <video autoplay muted loop id="myVideo">
-        <source src="assets/video/osc.mp4" type="video/MP4">
-      </video>
-    </div>
+    <section id="tongquanmain">
+      <div class="video-banner">
+        <video autoplay muted loop id="myVideo">
+          <source src="assets/video/osc.mp4" type="video/MP4">
+        </video>
+      </div>
+    </section>
     <!-- End Carousel Section -->
 
 
@@ -201,7 +213,7 @@
       <div class="container-hinhanhhoitrai">
         <div class="swiper-container-wrapper swiper-container-wrapper--timeline">
           <!-- Timeline -->
-          <!-- <ul class="swiper-pagination-custom">
+          <ul class="swiper-pagination-custom">
             <li class='swiper-pagination-switch first active'><span class='switch-title'>I</span></li>
             <li class='swiper-pagination-switch'><span class='switch-title'>II</span></li>
             <li class='swiper-pagination-switch'><span class='switch-title'>III</span></li>
@@ -209,7 +221,7 @@
             <li class='swiper-pagination-switch'><span class='switch-title'>V</span></li>
             <li class='swiper-pagination-switch'><span class='switch-title'>VI</span></li>
             <li class='swiper-pagination-switch last'><span class='switch-title'>VII</span></li>
-          </ul> -->
+          </ul>
           <!-- Progressbar -->
           <div class="swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal"></div>
           <!-- Swiper -->
@@ -224,9 +236,16 @@
                   </div>
         
                   <div class="timeline-grid" data-aos="fade-left" data-aos-delay="100">
-                    <img src="assets/img/timeline/xuatphat1.jpg" class="" alt="timeline">
-                    <img src="assets/img/timeline/xuatphat2.jpg" class="" alt="timeline">
-                    <img src="assets/img/timeline/xuatphat3.jpg" class="" alt="timeline">
+                    <div class="timeline-image">
+                      <img src="assets/img/timeline/xuatphat1.jpg" class="" alt="timeline">
+                    </div>
+                    <div class="timeline-image">
+                      <img src="assets/img/timeline/xuatphat2.jpg" class="" alt="timeline">
+                    </div>
+                    <div class="timeline-image">
+                      <img src="assets/img/timeline/xuatphat3.jpg" class="" alt="timeline">
+                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -238,9 +257,10 @@
                   </div>
         
                   <div class="timeline-grid" data-aos="fade-left" data-aos-delay="100">
-                    <img src="assets/img/timeline/khaimacc.jpg" class="" alt="timeline">
-                    <img src="assets/img/timeline/khaimac2.jpg" class="" alt="timeline">
-                    <img src="assets/img/timeline/khaimac3.jpg" class="" alt="timeline">
+                    <div class="timeline-image"><img src="assets/img/timeline/khaimacc.jpg" class="" alt="timeline"></div>
+                    
+                    <div class="timeline-image"><img src="assets/img/timeline/khaimac2.jpg" class="" alt="timeline"></div>
+                    <div class="timeline-image"><img src="assets/img/timeline/khaimac3.jpg" class="" alt="timeline"></div>
                   </div>
                 </div>
               </div>
@@ -252,9 +272,9 @@
                   </div>
         
                   <div class="timeline-grid" data-aos="fade-left" data-aos-delay="100">
-                    <img src="assets/img/timeline/nhantrai.jpg" class="" alt="timeline">
-                    <img src="assets/img/timeline/nhantrai2.jpg" class="" alt="timeline">
-                    <img src="assets/img/timeline/nhantrai3.jpg" class="" alt="timeline">
+                    <div class="timeline-image"><img src="assets/img/timeline/nhantrai.jpg" class="" alt="timeline"></div>
+                    <div class="timeline-image"><img src="assets/img/timeline/nhantrai2.jpg" class="" alt="timeline"></div>
+                    <div class="timeline-image"><img src="assets/img/timeline/nhantrai3.jpg" class="" alt="timeline"></div>
                   </div>
                 </div>
               </div>
@@ -266,9 +286,9 @@
                   </div>
         
                   <div class="timeline-grid" data-aos="fade-left" data-aos-delay="100">
-                    <img src="assets/img/timeline/demgala.jpg" class="" alt="timeline">
-                    <img src="assets/img/timeline/demgala2.jpg" class="" alt="timeline">
-                    <img src="assets/img/timeline/demgala3.jpg" class="" alt="timeline">
+                    <div class="timeline-image"><img src="assets/img/timeline/demgala.jpg" class="" alt="timeline"></div>
+                    <div class="timeline-image"><img src="assets/img/timeline/demgala2.jpg" class="" alt="timeline"></div>
+                    <div class="timeline-image"><img src="assets/img/timeline/demgala3.jpg" class="" alt="timeline"></div>
                   </div>
                 </div>
               </div>
@@ -276,13 +296,13 @@
               <div class="swiper-slide">
                 <div class="timeline-1">          
                   <div class="timeline-title">
-                    <p>V: Đốt lửa trại</p>
+                    <p>V: Lửa trại và DJ</p>
                   </div>
         
                   <div class="timeline-grid" data-aos="fade-left" data-aos-delay="100">
-                    <img src="assets/img/timeline/luatrai.jpg" class="" alt="timeline">
-                    <img src="assets/img/timeline/luatrai1.jpg" class="" alt="timeline">
-                    <img src="assets/img/timeline/luatrai3.jpg" class="" alt="timeline">
+                    <div class="timeline-image"><img src="assets/img/timeline/luatrai.jpg" class="" alt="timeline"></div>
+                    <div class="timeline-image"><img src="assets/img/timeline/luatrai1.jpg" class="" alt="timeline"></div>
+                    <div class="timeline-image"><img src="assets/img/timeline/luatrai3.jpg" class="" alt="timeline"></div>
                   </div>
                 </div>
               </div>
@@ -290,13 +310,13 @@
               <div class="swiper-slide">
                 <div class="timeline-1">          
                   <div class="timeline-title">
-                    <p>VI: Ngày 03.08.2023 chơi escape game</p>
+                    <p>VI: Ngày 03.09.2023 chuỗi chạy trạm - escape game</p>
                   </div>
         
                   <div class="timeline-grid" data-aos="fade-left" data-aos-delay="100">
-                    <img src="assets/img/timeline/escapegame.jpg" class="" alt="timeline">
-                    <img src="assets/img/timeline/escapegame22.jpg" class="" alt="timeline">
-                    <img src="assets/img/timeline/escapegame3.jpg" class="" alt="timeline">
+                    <div class="timeline-image"><img src="assets/img/timeline/escapegame.jpg" class="" alt="timeline"></div>
+                    <div class="timeline-image"><img src="assets/img/timeline/escapegame22.jpg" class="" alt="timeline"></div>
+                    <div class="timeline-image"><img src="assets/img/timeline/escapegame3.jpg" class="" alt="timeline"></div>
                   </div>
                 </div>
               </div>
@@ -308,9 +328,9 @@
                   </div>
         
                   <div class="timeline-grid" data-aos="fade-left" data-aos-delay="100">
-                    <img src="assets/img/timeline/bemac11.jpg" class="" alt="timeline">
-                    <img src="assets/img/timeline/bemac2.jpg" class="" alt="timeline">
-                    <img src="assets/img/timeline/bemac33.jpg" class="" alt="timeline">
+                    <div class="timeline-image"><img src="assets/img/timeline/bemac11.jpg" class="" alt="timeline"></div>
+                    <div class="timeline-image"><img src="assets/img/timeline/bemac2.jpg" class="" alt="timeline"></div>
+                    <div class="timeline-image"><img src="assets/img/timeline/bemac33.jpg" class="" alt="timeline"></div>
                   </div>
                 </div>
               </div>
@@ -343,7 +363,7 @@
           <h3>Vé được mở bán trong 5 ngày</h3>
           <h3>Từ 05.08.2023 đến 10.08.2023</h3>
         </div>
-        <p>đơn đăng ký sẽ mở sau:</p>
+        <p>Đơn đăng ký sẽ mở sau:</p>
         <br>
         <div id="timer"></div>
       </div>
@@ -354,7 +374,9 @@
           <button class="title tablinks" onclick="openCity(event, 'nam')" id="defaultOpen">DÀNH CHO NAM SINH</button>
           <button class="title tablinks tablinks-nu" onclick="openCity(event, 'nu')">DÀNH CHO NỮ SINH</button>
         </div>
-        
+        <div class="chudangky">
+          <p>(Đơn đăng ký sẽ được mở vào lúc 20:00 ngày 05.08.2023)</p>
+        </div>
         <!-- <div id="nam" class="tabcontent">
           <form class="form" method="post" action="" name="informations-nam">
             <div class="title">Đơn đăng ký cho nam sinh</div>
@@ -722,11 +744,11 @@
           </div>
 
           <div class="kim-cuong title section-title">
-            <p>10 trại</p>
+            <p>100 khách mời</p>
           </div>
 
           <div class="kim-cuong title section-title">
-            <p>100 khách mời</p>
+            <p>Và 10 trại</p>
           </div>
         </div>  
     </section>
@@ -836,70 +858,36 @@
     <h1>Quyền lợi trại sinh</h1>
   </div>
   <section id="quyenloi" class="quyenloi">
-    <div class="container-hinhanhhoitrai">
-      <div class="swiper-container-wrapper swiper-container-wrapper--timeline">
-        <!-- quyen loi -->
-        <!-- Swiper -->
-        <div class="swiper swiper-container swiper-container--timeline">
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <!-- 1 -->
-            <div class="swiper-slide">
-              <div class="timeline-1">
-                <div class="box">
-                  <div class="box-img">
-                    <img src="assets/img/quyenloi/doan.gif" class="img-fluid" alt="do an">
-                  </div>
-                  <div class="box-info">
-                    <p>Menu đa dạng, phong phú</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- 2 -->
-            <div class="swiper-slide">
-              <div class="timeline-1">
-                <div class="box">
-                  <div class="box-img">
-                    <img src="assets/img/quyenloi/quatangg.gif" class="img-fluid" alt="do an">
-                  </div>
-                  <div class="box-info">
-                    <p>Các món quà bất ngờ</p>
-                    <p>Đang chờ bạn khám phá</p>
-                    <p>Mỗi trại sẽ được 2 phần quà</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- 3 -->
-            <div class="swiper-slide">
-              <div class="timeline-1">
-                <div class="box">
-                  <div class="box-img">
-                    <img src="assets/img/quyenloi/khucamtrai.gif" class="img-fluid" alt="do an">
-                  </div>
-                  <div class="box-info">
-                    <p>Không gian thoáng mát rộng rãi</p>
-                    <p>Phù hợp hoạt động ngoài trời</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- 4 -->
-            <div class="swiper-slide">
-              <div class="timeline-1">
-                <div class="box">
-                  <div class="box-img">
-                    <img src="assets/img/quyenloi/anninh.gif" class="img-fluid" alt="do an">
-                  </div>
-                  <div class="box-info">
-                    <p>Khu cắm trại tách biệt</p>
-                    <p>Với an ninh 24/24 </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+  
+    <div class="quyenloi-grid">
+      <div class="bbox">
+        <div class="box-img">
+          <img src="assets/img/quyenloi/doan.gif" class="img-fluid" alt="do an">
+        </div>
+        <div class="box-info">
+          <p>Đồ ăn tươi ngon</p>
+          <p>Menu đa dạng, phong phú</p>
+          <p>Các món ăn chế biến tỉ mỉ, độc đáo</p>
+        </div>
+      </div>
+      <div class="bbox">
+        <div class="box-img">
+          <img src="assets/img/quyenloi/quatangg.gif" class="img-fluid" alt="qua tang">
+        </div>
+        <div class="box-info">
+          <p>Các món quà bất ngờ</p>
+          <p>Đang chờ bạn khám phá</p>
+          <p>Mỗi trại sinh sẽ nhận 1 phần quà</p>
+        </div>
+      </div>
+      <div class="bbox">
+        <div class="box-img">
+          <img src="assets/img/quyenloi/camtraiiii.gif" class="img-fluid" alt="cam trai">
+        </div>
+        <div class="box-info">
+          <p>An ninh đảm bảo 24/24</p>
+          <p>Khu cắm trại riêng biệt</p>
+          <p>Không gian thoáng mát rộng rãi</p>
         </div>
       </div>
     </div>
@@ -916,7 +904,7 @@
         <div class="row">
           <div class="col-lg-6 col-md-6"> 
             <a href="#"><img src="assets/img/logo-plz-img.png" class="img-fluid"/></a>
-            <a href="#"><img src="assets/img/logotext-plz-final.png" class="img-fluid maytinh"/></a>
+            <a href="#"><img src="assets/img/logotext-plz-finall.png" class="img-fluid maytinh"/></a>
             <p>
               Summer Camp 2023 - Chuyến tàu thời đại được tổ chức bởi Ban Cán sự Đoàn tại Liên bang Nga với mục đích tạo ra sân chơi cho các bạn sinh viên đang học tập tại Liên bang Nga.
             </p>

@@ -18,6 +18,10 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .timeline-grid .timeline-image {
+    aspect-ratio: 4/3;
+  }
+
 
 
   .swiper-slide .timeline-1 {

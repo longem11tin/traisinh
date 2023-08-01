@@ -813,6 +813,10 @@ video {
     font-size: 20px;
   }
 
+  .quyenloi-grid {
+    font-size: 14px;
+  }
+
 }
 
 /* Phone */
@@ -903,6 +907,10 @@ video {
 
   .quyenloi .container-hinhanhhoitrai .swiper-slide .timeline-1 p {
     font-size: 16px;
+  }
+
+  .quyenloi-grid {
+    font-size: 6px;
   }
 
 }
@@ -1060,6 +1068,20 @@ section {
 
 .clients .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #3966DF;
+}
+
+
+/*--------------------------------------------------------------
+# Features
+--------------------------------------------------------------*/
+
+.tabs .chudangky {
+  padding: 16px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "SVG-Aguda";
+  color: #fff;
+  /* text-transform: uppercase; */
 }
 
 /*--------------------------------------------------------------
@@ -1896,6 +1918,26 @@ section {
 /*--------------------------------------------------------------
 # quyen loi
 --------------------------------------------------------------*/
+
+.quyenloi-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.quyenloi-grid {
+  margin: 0 5px 0;
+}
+
+#quyenloi .quyenloi-grid .bbox .box-img {
+
+  padding-bottom: 20px;
+  border-radius: 3px;
+  aspect-ratio: 4/3;
+}
 
 /* .swiper-container-wrapper--timeline .swiper-slide .box-img{
   border-radius: 5%;
