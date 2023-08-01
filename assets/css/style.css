@@ -632,7 +632,7 @@ tabs
 @media (min-width: 993px) {
   video {
     margin-top: 20px;
-    max-width: 86% ;
+    max-width: 79% ;
     height: auto ;
     display: block;
     margin: 0 auto;
@@ -1936,7 +1936,7 @@ section {
 
 #quyenloi .quyenloi-grid .bbox .box-img {
 
-  padding-bottom: 20px;
+  padding-bottom: 5px;
   border-radius: 3px;
   aspect-ratio: 4/3;
 }
