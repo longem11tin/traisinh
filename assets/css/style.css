@@ -793,6 +793,8 @@ video {
   }
 
   .team .img-fluid-1 {
+    max-width: 70%;
+    border-radius: 50%;
     margin-left: 0%;
   }
 
@@ -851,6 +853,8 @@ video {
   }
 
   .team .img-fluid-1 {
+    max-width: 70%;
+    border-radius: 50%;
     margin-left: 0%;
   }
 
