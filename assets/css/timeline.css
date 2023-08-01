@@ -290,6 +290,10 @@
   .ag-timeline-card_arrow {
     margin-top: 12px;
   }
+
+  .swiper-slide .timeline-1 p {
+    font-size: 21px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -309,6 +313,10 @@
   .ag-timeline-card_img {
     height: auto;
     width: auto;
+  }
+
+  .swiper-slide .timeline-1 p {
+    font-size: 17px;
   }
 }
 
@@ -332,11 +340,11 @@
   } */
 
   .ag-timeline_tagline {
-    font-size: 20px;
+    font-size: 10px;
   }
 
   .timeline img {
-    max-width: 70%;
+    /* max-width: 70%; */
   }
 
   .ag-format-container {

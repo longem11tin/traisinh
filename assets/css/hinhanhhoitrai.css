@@ -170,6 +170,11 @@
     .timeline-title {
       text-align: center;
     }
+
+    .swiper-slide .timeline-1 p {
+      margin: 10px ;
+      font-size: 21px;
+    }
   
   }
   
@@ -177,5 +182,10 @@
   @media (max-width: 680px) {
     .timeline-grid {
       display: block;
+    }
+
+    .swiper-slide .timeline-1 p {
+      margin: 10px ;
+      font-size: 15px;
     }
   }
