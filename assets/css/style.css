@@ -717,206 +717,6 @@ tabs
   font-size: 30px;
 }
 
-/* desktop  */
-@media (min-width: 1025px) {
-
-  .title .chuyen-tau-pad,
-  .title .chuyen-tau-phone {
-    display: none;
-  }
-
-  .phone {
-    display: none;
-  }
-
-  .pad {
-    display: none;
-  }
-
-} 
-
-/* Pad */
-@media (min-width: 681px) and (max-width: 1024px) {
-
-  #header {
-    padding: 8px 0;
-  }
-
-  .title .chuyentau, 
-  .title .chuyen-tau-phone {
-    display: none;
-  }
-
-
-  #team .section-title {
-    font-size: 30px;
-    color: #fff;
-  }
-
-  .services .section-title img {
-    width: 70%;
-  }
-
-  .title .dongkhung {
-    font-size: 20px;
-    width: 90%;
-  }
-  
-  .title h1 {
-    font-family: 'MBFVietnam', sans-serif;
-    font-size: 20px;
-
-  }
-  
-  .title h3 {
-    font-family: 'MBFVietnam', sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 20px;
-  }
-  
-  .title .dangky {
-    font-family: 'MBFVietnam', sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 20px;
-  }
-
-  .services .section-title p {
-    font-family: "MBFVietnam";
-    font-size: 20px;
-  }
-
-  .team .img-fluid-1 {
-    width: 240px;
-    height: 240px;
-  }
-
-  .team .truongban .member-1 {
-    margin: 20px 0;
-    width: 100%;
-    text-align: center;
-  }
-
-  .services .container .section-title p {
-    font-size: 22px;
-  }
-
-  .services .title .dangkyy h3 {
-    font-family: "SVN-Aguda", sans-serif;
-    font-size: 22px;
-  }
-
-  .team .section-title p {
-    font-size: 22px;
-  }
-
-  .swiper-slide .timeline-1 p {
-    font-size: 20px;
-  }
-
-  .quyenloi-grid {
-    font-size: 14px;
-  }
-
-}
-
-/* Phone */
-@media (max-width: 680px) {
-
-  .services .dongkhung {
-    font-family: "SVN-Aguda", sans-serif;
-    font-size: 10px;
-    width: 90%;
-  }
-  
-  .title h1 {
-    font-family: 'MBFVietnam', sans-serif;
-    font-size: 18px;
-
-  }
-  
-  .title h3 {
-    font-family: 'MBFVietnam', sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 18px;
-  }
-  
-  .title .dangky {
-    font-family: 'MBFVietnam', sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 18px;
-  }
-
-  .team .img-fluid-1 {
-    width: 240px;
-    height: 240px;
-  }
-
-  #header {
-    padding: 8px 0;
-  }
-
-  .title .chuyentau,
-  .title .chuyen-tau-pad {
-    display: none;
-  }
-  #header .logo-text {
-    display: none;
-  }
-
-  .title .title-1 {
-    font-size: 18px;
-  }
-
-  .title h1 {
-    font-size: 18px;
-  }
-
-  #team .section-title p {
-    font-size: 18px;
-  }
-
-  .services .section-title img {
-    width: 50%;
-    height: auto;
-  }
-
-  .title .dongkhung {
-    font-size: 18px;
-  }
-
-  .team .truongban .member-1 {
-    margin: 20px 0;
-    width: 100%;
-    text-align: center;
-  }
-
-  .services .container .section-title p {
-    font-size: 16px;
-  }
-
-  .services .title .dangkyy h3 {
-    font-family: "SVN-Aguda", sans-serif;
-    font-size: 12px;
-  }
-
-  .team .section-title p {
-    font-size: 18px;
-  }
-
-  .quyenloi .container-hinhanhhoitrai .swiper-slide .timeline-1 p {
-    font-size: 16px;
-  }
-
-  .quyenloi-grid {
-    font-size: 6px;
-  }
-
-}
-
 section {
   padding: 20px 0 0 0;
   overflow: hidden;
@@ -1471,7 +1271,7 @@ section {
 
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 28% 1fr ;
   margin: 10px 0;
 }
 
@@ -2121,4 +1921,210 @@ section {
 #footer .img {
   width: 80px;
   height: 80px;
+}
+
+
+/* desktop  */
+@media (min-width: 1025px) {
+
+  .title .chuyen-tau-pad,
+  .title .chuyen-tau-phone {
+    display: none;
+  }
+
+  .phone {
+    display: none;
+  }
+
+  .pad {
+    display: none;
+  }
+
+} 
+
+/* Pad */
+@media (min-width: 681px) and (max-width: 1024px) {
+
+  #header {
+    padding: 8px 0;
+  }
+
+  .title .chuyentau, 
+  .title .chuyen-tau-phone {
+    display: none;
+  }
+
+
+  #team .section-title {
+    font-size: 30px;
+    color: #fff;
+  }
+
+  .services .section-title img {
+    width: 70%;
+  }
+
+  .title .dongkhung {
+    font-size: 20px;
+    width: 90%;
+  }
+  
+  .title h1 {
+    font-family: 'MBFVietnam', sans-serif;
+    font-size: 20px;
+
+  }
+  
+  .title h3 {
+    font-family: 'MBFVietnam', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  
+  .title .dangky {
+    font-family: 'MBFVietnam', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+
+  .services .section-title p {
+    font-family: "MBFVietnam";
+    font-size: 20px;
+  }
+
+  .team .img-fluid-1 {
+    width: 240px;
+    height: 240px;
+  }
+
+  .team .truongban .member-1 {
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .services .container .section-title p {
+    font-size: 22px;
+  }
+
+  .services .title .dangkyy h3 {
+    font-family: "SVN-Aguda", sans-serif;
+    font-size: 22px;
+  }
+
+  .team .section-title p {
+    font-size: 22px;
+  }
+
+  .swiper-slide .timeline-1 p {
+    font-size: 20px;
+  }
+
+  .quyenloi-grid {
+    font-size: 14px;
+  }
+
+}
+
+/* Phone */
+@media (max-width: 680px) {
+
+  .services .dongkhung {
+    font-family: "SVN-Aguda", sans-serif;
+    font-size: 10px;
+    width: 90%;
+  }
+  
+  .title h1 {
+    font-family: 'MBFVietnam', sans-serif;
+    font-size: 18px;
+
+  }
+  
+  .title h3 {
+    font-family: 'MBFVietnam', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+  
+  .title .dangky {
+    font-family: 'MBFVietnam', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+
+  .team .img-fluid-1 {
+    width: 240px;
+    height: 240px;
+  }
+
+  #header {
+    padding: 8px 0;
+  }
+
+  .title .chuyentau,
+  .title .chuyen-tau-pad {
+    display: none;
+  }
+  #header .logo-text {
+    display: none;
+  }
+
+  .title .title-1 {
+    font-size: 18px;
+  }
+
+  .title h1 {
+    font-size: 18px;
+  }
+
+  #team .section-title p {
+    font-size: 18px;
+  }
+
+  .services .section-title img {
+    width: 50%;
+    height: auto;
+  }
+
+  .title .dongkhung {
+    font-size: 18px;
+  }
+
+  .team .truongban .member-1 {
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .services .container .section-title p {
+    font-size: 16px;
+  }
+
+  .services .title .dangkyy h3 {
+    font-family: "SVN-Aguda", sans-serif;
+    font-size: 12px;
+  }
+
+  .team .section-title p {
+    font-size: 18px;
+  }
+
+  .quyenloi .container-hinhanhhoitrai .swiper-slide .timeline-1 p {
+    font-size: 16px;
+  }
+
+  .quyenloi-grid {
+    font-size: 6px;
+  }
+
+  .quymochtr-1 {
+
+    grid-template-columns: 1fr 50% 1fr ;
+    margin: 10px 0;
+  }
 }
