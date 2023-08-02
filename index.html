@@ -171,7 +171,7 @@
   <main id="main">
 
     <!-- Tong quan video -->
-    <div class="title">
+    <!-- <div class="title">
       <h1>Tổng quan chương trình</h1>
     </div>
     <section id="tongquanmain">
@@ -180,7 +180,7 @@
           <source src="assets/video/osc.mp4" type="video/MP4">
         </video>
       </div>
-    </section>
+    </section> -->
     <!-- End Carousel Section -->
 
 
@@ -453,13 +453,13 @@
 
             </div>
 
-            <button type="submit" class="submit">submit</button>
+            <button id="button-nam" type="submit" class="submit">submit</button>
           </form>
         </div>
         
         <div id="nu" class="tabcontent">
           <form class="form" method="post" action="" name="informations-nam">
-            <div class="title">Đơn đăng ký cho nam sinh</div>
+            <div class="title">Đơn đăng ký cho nữ sinh</div>
             <div class="input-container ic1">
               <label for="name">Họ và tên</label>
               <input id="name" class="input" type="text" placeholder=" " name="name" required />
@@ -919,13 +919,29 @@
     const scriptURL = 'https://script.google.com/macros/s/AKfycbyZKzilrgr1cmsydmd1_jc3glemlF6ZIGaFggUAQ3PoQbxQBY1-3ezf47Jm4x6xarJX4Q/exec'
     const formNam = document.forms['informations-nam']
 
+    let submitedLoading = false;
+
+    const loading = document.getElementById("button-nam");
+
     formNam.addEventListener('submit', e => {
       e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(formNam)})
-      .then(response => alert("Thank you! your form is submitted successfully." ))
-      .then(() => { console.log('da thanh cong') })
-      .catch(error => console.error('Error!', error.message))
+      if (!submitedLoading) {
+        submitedLoading = true;
+        loading.innerHTML ="Loading"
+        fetch(scriptURL, { method: 'POST', body: new FormData(formNam)})
+        .then(() => {
+          alert("ABC")
+        })
+        .then(() => { formNam.reset() })
+        .catch(error => console.error('Error!', error.message))
+        .finally(() => {
+          loading.innerHTML ="Submit"
+          submitedLoading = false
+        })
+      }
     })
+
+    //
 
     const scriptURLNU = 'https://script.google.com/macros/s/AKfycbx1Ox8G8aYZWua6vYrEcYSkCgUSLfqUK9Y21f6dMstqIKsLUaf5aHp_JgoeQkf9nOVGZw/exec'
     const formNu = document.forms['informations-nu']
