@@ -572,6 +572,7 @@ tabs
   display: block;
 }
 
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -1723,6 +1724,19 @@ section {
 # quyen loi
 --------------------------------------------------------------*/
 
+.luuy {
+  color: #fff;
+}
+
+.luuy-2 {
+  color: red; 
+  font-size: 18px;
+}
+
+/*--------------------------------------------------------------
+# quyen loi
+--------------------------------------------------------------*/
+
 .quyenloi-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -1738,9 +1752,9 @@ section {
 
 #quyenloi .quyenloi-grid .bbox .box-img {
 
-  padding-bottom: 5px;
+  padding-bottom: 15px;
   border-radius: 3px;
-  aspect-ratio: 4/3;
+  aspect-ratio: 8/3;
 }
 
 /* .swiper-container-wrapper--timeline .swiper-slide .box-img{
