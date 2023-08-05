@@ -396,8 +396,8 @@
           <span class="close">&times;</span>
           <img class="modal-img" src="https://media.tenor.com/Irg9yU74Zo8AAAAC/woohoo-yeah.gif" alt="sucess Gif, Đăng ký hội trại thành công"/>
           <div class="modal-info">
-            <p>Cảm ơn bạn đã đăng ký tham gia Trại hè “Chuyến tàu Thời đại” 2023 ❤️</p>
-            <p>Bạn vui lòng <span class="do">kiểm tra email và hoàn tất các thủ tục</span> trong quá trình đăng ký. 📩</b></p>
+            <p>Cảm ơn bạn đã đăng ký tham gia Trại hè 2023 “Chuyến Tàu Thời Đại” ❤️</p>
+            <p>BTC sẽ gửi mail xác nhận và hướng dẫn thanh toán trong vài phút tới, <span class="do">bạn vui lòng kiểm tra mail và hoàn tất các thủ tục đăng ký </span> để nhận được vé tham gia.📩</p>
             <p>Chúc bạn một ngày tốt lành. Hy vọng sẽ sớm gặp lại bạn tại chảo lửa của Trại hè 2023🔥</p>
             <p class="tolen">Trân trọng!</p>
           </div>
@@ -409,10 +409,10 @@
           <button class="title tablinks" onclick="openCity(event, 'nam')" id="defaultOpen">DÀNH CHO NAM SINH</button>
           <button class="title tablinks tablinks-nu" onclick="openCity(event, 'nu')">DÀNH CHO NỮ SINH</button>
         </div>
-        <div class="chudangky">
+        <!-- <div class="chudangky">
           <p>(Đơn đăng ký sẽ được mở vào lúc 20:00 ngày 05.08.2023)</p>
-        </div>
-        <!-- <div id="nam" class="tabcontent">
+        </div> -->
+        <div id="nam" class="tabcontent">
           <form class="form" method="post" action="" name="informations-nam">
             <div class="title">Đơn đăng ký cho nam sinh</div>
             <div class="input-container ic1">
@@ -432,20 +432,20 @@
               <input id="phonenumber" class="input" type="text" name="So dien thoai" placeholder="Ví dụ: +79991234567 hoặc 89991234567" required />
             </div>
             <div class="input-container ic2">
-              <label for="quequan">Quê quán ở Việt Nam <span class="do">*</span></label>
-              <input id="quequan" class="input" type="text" name="Que Quan" placeholder="" required />
+              <label for="facebook">Link Facebook <span class="do">*</span></label>
+              <input id="facebook" class="input" type="url" name="Link Facebook" placeholder="" required />
             </div>
             <div class="input-container ic2">
               <label for="thanhpho">Địa chỉ sinh sống tại Nga <span class="do">*</span></label>
               <input id="thanhpho" class="input" type="text" name="Thanh Pho" placeholder="Nếu ở Moscow, bạn vui lòng ghi rõ ở gần Metro nào" required />
             </div>
             <div class="input-container ic2">
-              <label for="tendonvi">Tên đơn vị (nếu có)</label>
-              <input id="tendonvi" class="input" type="text" name="Ten Don vi" placeholder=""  />
+              <label for="tendonvi">Tên Chi Đoàn/Liên Chi Đoàn/Đoàn Cơ sở (nếu có)</label>
+              <input id="tendonvi" class="input" type="text" name="Ten Chi Doan" placeholder=""  />
             </div>
             <div class="input-container ic2">
-              <label for="tentruongdh">Tên trường đang học (nếu có)</label>
-              <input id="lastname" class="input" type="text" name="Ten Truong Dai hoc" placeholder=""  />
+              <label for="tentruongdh">Tên trường đang học/địa chỉ nơi làm việc (nếu có)</label>
+              <input id="tentruongdh" class="input" type="text" name="Ten Truong Dai hoc" placeholder="Nếu là sinh viên ghi thêm lớp, khoa"  />
             </div>
             <div class="input-container ic2">
               <label for="date">Ngày sinh <span class="do">*</span></label>
@@ -461,6 +461,8 @@
             </div>
             <div class="input-container ic2">
               <label for="note">Chú thích</label>
+              <br>
+              <label for="note">(Bổ sung chú thích nếu bạn thuộc khối ngành quốc phòng, an ninh cần xin giấy nghỉ phép)</label>
               <input id="note" class="input" type="textarea" name="Chu thich" placeholder="Ví dụ: ăn chay, kiêng thịt heo, niềng răng, dị ứng với gì, ... " />
             </div>
 
@@ -508,14 +510,17 @@
             </div>   
             <br>
 
-            <p class="luuy-2">Lưu ý: </p>
-            <p class="luuy">1. Thông tin cung cấp cho BTC được sử dụng chính chủ, thông tin khớp với số hộ chiếu và không được đăng ký hộ dưới bất kỳ trường hợp nào.</p>
-            <p class="luuy">2. Cổng đăng ký có thể đóng sớm hơn khi đủ số lượng trại sinh. </p>
-            <br>
-            <p class="luuy">Mọi tin bạn cung cấp sẽ được BTC bảo mật, chỉ sử dụng vì mục đích chương trình.</p>
-            <p class="luuy">Bạn vui lòng kiểm tra lại toàn bộ thông tin trước khi bấm đăng ký.</p>
-            <p class="luuy">Ban Tổ chức Trại hè 2023 xin trân trọng cảm ơn!</p>
-
+            <div>
+              <p class="luuy-2">Lưu ý: </p>
+              <p class="luuy">1. Thông tin cung cấp cho BTC được sử dụng chính chủ, thông tin khớp với số hộ chiếu và không được đăng ký hộ dưới bất kỳ trường hợp nào.</p>
+              <p class="luuy">2. Cổng đăng ký có thể đóng sớm hơn khi đủ số lượng trại sinh. </p>
+              <p class="luuy">3. BTC sẽ gửi mail xác nhận và hướng dẫn thanh toán ngay sau khi nhận được đơn đăng ký của bạn (Đối với các đơn đăng ký từ 0h AM đến 08h00 AM, BTC sẽ gửi mail xác nhận vào lúc 08h00 AM).</p>
+              <p class="luuy">4. Nếu bạn thuộc khối ngành quốc phòng, an ninh cần xin giấy nghỉ phép, vui lòng ghi rõ ở phần chú thích.</p>
+              <br>
+              <p class="luuy">Mọi tin bạn cung cấp sẽ được BTC bảo mật, chỉ sử dụng vì mục đích chương trình.</p>
+              <p class="luuy">Bạn vui lòng kiểm tra lại toàn bộ thông tin trước khi bấm đăng ký.</p>
+              <p class="luuy">Ban Tổ chức Trại hè 2023 xin trân trọng cảm ơn!</p>
+            </div>
             <button id="button-nam" type="submit" class="submit" >Submit</button>
           </form>
         </div>
@@ -524,51 +529,51 @@
           <form class="form" method="post" action="" name="informations-nu">
             <div class="title">Đơn đăng ký cho nữ sinh</div>
             <div class="input-container ic1">
-              <label for="name">Họ và tên <span class="do">*</span></label>
+              <label for="nu-name">Họ và tên <span class="do">*</span></label>
               <input id="nu-name" class="input" type="text" name="Name nu" placeholder=""  required />
             </div>
             <div class="input-container ic2">
-              <label for="email">Số hộ chiếu <span class="do">*</span></label>
+              <label for="nu-email">Số hộ chiếu <span class="do">*</span></label>
               <input id="nu-hochieu" class="input" type="text" name="Ho Chieu nu" placeholder="" required />
             </div>
             <div class="input-container ic2">
-              <label for="email">Email <span class="do">*</span></label>
+              <label for="nu-email">Email <span class="do">*</span></label>
               <input id="nu-email" class="input" type="email" name="Email nu" placeholder="" required />
             </div>
             <div class="input-container ic2">
-              <label for="phonenumber">Số điện thoại <span class="do">*</span></label>
+              <label for="nu-phonenumber">Số điện thoại <span class="do">*</span></label>
               <input id="nu-phonenumber" class="input" type="text" name="So dien thoai nu" placeholder="Ví dụ: +79991234567 hoặc 89991234567" required />
             </div>
             <div class="input-container ic2">
-              <label for="quequan">Quê quán ở Việt Nam <span class="do">*</span></label>
-              <input id="nu-quequan" class="input" type="text" name="Que Quan nu" placeholder="" required />
+              <label for="nu-facebook">Link Facebook <span class="do">*</span></label>
+              <input id="nu-facebook" class="input" type="text" name="Link Facebook nu" placeholder="" required />
             </div>
             <div class="input-container ic2">
-              <label for="thanhpho">Địa chỉ sinh sống tại Nga <span class="do">*</span></label>
+              <label for="nu-thanhpho">Địa chỉ sinh sống tại Nga <span class="do">*</span></label>
               <input id="nu-thanhpho" class="input" type="text" name="Thanh Pho nu" placeholder="Nếu ở Moscow, bạn vui lòng ghi rõ ở gần Metro nào" required />
             </div>
             <div class="input-container ic2">
-              <label for="tendonvi">Tên đơn vị (nếu có)</label>
-              <input id="nu-tendonvi" class="input" type="text" name="Ten Don vi nu" placeholder=""  />
+              <label for="nu-tendonvi">Tên Chi Đoàn/Liên Chi Đoàn/Đoàn Cơ sở (nếu có)</label>
+              <input id="nu-tendonvi" class="input" type="text" name="Ten Chi Doan nu" placeholder=""  />
             </div>
             <div class="input-container ic2">
-              <label for="tentruongdh">Tên trường đang học (nếu có)</label>
-              <input id="nu-lastname" class="input" type="text" name="Ten Truong Dai hoc nu" placeholder=""  />
+              <label for="nu-tentruongdh">Tên trường đang học/địa chỉ nơi làm việc (nếu có)</label>
+              <input id="nu-tentruongdh" class="input" type="text" name="Ten Truong Dai hoc nu" placeholder="Nếu là sinh viên vui lòng ghi rõ tên trường lớp"  />
             </div>
             <div class="input-container ic2">
-              <label for="date">Ngày sinh <span class="do">*</span></label>
+              <label for="nu-date">Ngày sinh <span class="do">*</span></label>
               <input id="nu-date" class="input" type="date" name="Ngay sinh nu" placeholder="" required />
             </div>
             <div class="input-container ic2">
-              <label for="size">Size giày (Châu Á) <span class="do">*</span></label>
+              <label for="nu-size">Size giày (Châu Á) <span class="do">*</span></label>
               <input id="nu-size" class="input" type="textarea" name="Size Giay nu" placeholder="Ví dụ: nữ: size 36; nam: 42" required/>
             </div>
             <div class="input-container ic2">
-              <label for="link-anh">Link ảnh cá nhân đăng ký thẻ trại sinh <span class="do">*</span></label>
+              <label for="nu-link-anh">Link ảnh cá nhân đăng ký thẻ trại sinh <span class="do">*</span></label>
               <input id="nu-link-anh" class="input" type="url" name="Avatar nu" placeholder="Đính kèm link drive, link vui lòng mở quyền truy cập và rõ mặt " required/>
             </div>
             <div class="input-container ic2">
-              <label for="note">Chú thích</label>
+              <label for="nu-note">Chú thích</label>
               <input id="nu-note" class="input" type="textarea" name="Chu thich nu" placeholder="Ví dụ: ăn chay, kiêng thịt heo, niềng răng, dị ứng với gì, ... " />
             </div>
 
@@ -610,23 +615,28 @@
 
             <br>
             <div class="yeucau">
-              <p>Chương trình Trại hè 2023 - Chuyến Tàu Thời Đại sẽ được tổ chức vào ngày 02.09 và 03.09.2023 tại địa điểm: Obninsk Kaluga. </p>
-              <input type="checkbox" id="tuanthu-nu" name="Tuan Thu nu" value="co" required />
-              <label for="tuanthu-nu">Tôi cam kết sẽ tuân thủ đúng các nội quy của chương trình </label>
+                <p>Chương trình Trại hè 2023 - Chuyến Tàu Thời Đại sẽ được tổ chức vào ngày 02.09 và 03.09.2023 tại địa điểm: Obninsk Kaluga. </p>
+                <input type="checkbox" id="tuanthu-nu" name="Tuan Thu nu" value="co" required />
+                <label for="tuanthu-nu">Tôi cam kết sẽ tuân thủ đúng các nội quy của chương trình </label>
             </div>   
             <br>
 
-            <p class="luuy-2">Lưu ý: </p>
-            <p class="luuy">1. Thông tin cung cấp cho BTC được sử dụng chính chủ, thông tin khớp với số hộ chiếu và không được đăng ký hộ dưới bất kỳ trường hợp nào.</p>
-            <p class="luuy">2. Cổng đăng ký có thể đóng sớm hơn khi đủ số lượng trại sinh. </p>
-            <br>
-            <p class="luuy">Mọi tin bạn cung cấp sẽ được BTC bảo mật, chỉ sử dụng vì mục đích chương trình.</p>
-            <p class="luuy">Bạn vui lòng kiểm tra lại toàn bộ thông tin trước khi bấm đăng ký.</p>
-            <p class="luuy">Ban Tổ chức Trại hè 2023 xin trân trọng cảm ơn!</p>
+            <div>
+                <p class="luuy-2">Lưu ý: </p>
+                <p class="luuy">1. Thông tin cung cấp cho BTC được sử dụng chính chủ, thông tin khớp với số hộ chiếu và không được đăng ký hộ dưới bất kỳ trường hợp nào.</p>
+                <p class="luuy">2. Cổng đăng ký có thể đóng sớm hơn khi đủ số lượng trại sinh. </p>
+                <p class="luuy">3. BTC sẽ gửi mail xác nhận và hướng dẫn thanh toán ngay sau khi nhận được đơn đăng ký của bạn (Đối với các đơn đăng ký từ 0h AM đến 08h00 AM, BTC sẽ gửi mail xác nhận vào lúc 08h00 AM).</p>
+                <p class="luuy">4. Nếu bạn thuộc khối ngành quốc phòng, an ninh cần xin giấy nghỉ phép, vui lòng ghi rõ ở phần chú thích.</p>
+                <br>
+                <p class="luuy">Mọi tin bạn cung cấp sẽ được BTC bảo mật, chỉ sử dụng vì mục đích chương trình.</p>
+                <p class="luuy">Bạn vui lòng kiểm tra lại toàn bộ thông tin trước khi bấm đăng ký.</p>
+                <p class="luuy">Ban Tổ chức Trại hè 2023 xin trân trọng cảm ơn!</p>
+            </div>
 
             <button id="button-nu" type="submit" class="submit" >Submit</button>
           </form>
-        </div> -->
+        </div>
+
 
 
       </div>
@@ -1013,6 +1023,7 @@
     const loadingNu = document.getElementById("button-nu");
 
     let modalNu = document.getElementById("myModal");
+    let modalNuWait = document.getElementById("myModalWait");
     
     // Get the <span> element that closes the modal
     let spanNu = document.getElementsByClassName("close")[0];
