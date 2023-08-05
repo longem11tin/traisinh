@@ -382,9 +382,9 @@
           <h3>Vé được mở bán trong 5 ngày</h3>
           <h3>Từ 05.08.2023 đến 10.08.2023</h3>
         </div>
-        <p>Đơn đăng ký sẽ mở sau:</p>
+        <!-- <p>Đơn đăng ký sẽ mở sau:</p>
         <br>
-        <div id="timer"></div>
+        <div id="timer"></div> -->
       </div>
 
       <!-- ======= Tabs Section ======= -->
@@ -404,15 +404,30 @@
         </div>
       </div>
 
+      <div id="myModalWait" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img class="modal-img" src="https://media.tenor.com/Irg9yU74Zo8AAAAC/woohoo-yeah.gif" alt="sucess Gif, Đăng ký hội trại thành công"/>
+          <div class="modal-info">
+            <p>Cảm ơn bạn đã đăng ký tham gia Trại hè 2023 “Chuyến Tàu Thời Đại” ❤️</p>
+            <p>Hiện tại đơn nam đang hết vế❤️</p>
+            <p>BTC sẽ gửi mail xác nhận và hướng dẫn thanh toán trong vài phút tới, <span class="do">bạn vui lòng kiểm tra mail và hoàn tất các thủ tục đăng ký </span> để nhận được vé tham gia.📩</p>
+            <p>Chúc bạn một ngày tốt lành. Hy vọng sẽ sớm gặp lại bạn tại chảo lửa của Trại hè 2023🔥</p>
+            <p class="tolen">Trân trọng!</p>
+          </div>
+        </div>
+      </div>
+
       <div class="tabs">
         <div class="tab">
           <button class="title tablinks" onclick="openCity(event, 'nam')" id="defaultOpen">DÀNH CHO NAM SINH</button>
           <button class="title tablinks tablinks-nu" onclick="openCity(event, 'nu')">DÀNH CHO NỮ SINH</button>
         </div>
-        <div class="chudangky">
+        <!-- <div class="chudangky">
           <p>(Đơn đăng ký sẽ được mở vào lúc 20:00 ngày 05.08.2023)</p>
-        </div>
-        <!-- <div id="nam" class="tabcontent">
+        </div> -->
+        <div id="nam" class="tabcontent">
           <form class="form" method="post" action="" name="informations-nam">
             <div class="title">Đơn đăng ký cho nam sinh</div>
             <div class="input-container ic1">
@@ -636,7 +651,6 @@
             <button id="button-nu" type="submit" class="submit" >Submit</button>
           </form>
         </div>
- -->
 
 
       </div>
